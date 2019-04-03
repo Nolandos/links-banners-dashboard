@@ -489,6 +489,8 @@ template {
   width: 100%;
   height: 30px;
   color: #fff;
+  text-align: center;
+  line-height: 30px;
 }
 
 .color-box-1 {
@@ -503,32 +505,71 @@ template {
   background-color: #f58220;
 }
 
-.menu > li {
+.color-box-4 {
+  background-color: #282828;
+}
+
+.color-box-5 {
+  background-color: #ffa200;
+}
+
+.color-box-6 {
+  color: #000;
+  border: 1px solid black;
+}
+
+/* Components */
+.menu-side-bar > li {
   list-style-type: none;
   padding: 15px;
   background-color: #191919;
   cursor: pointer;
 }
 
-.menu > li:hover {
+.menu-side-bar > li:hover {
   background-color: #282828;
   border-left: 5px solid #f58220;
 }
 
-.menu > li:hover a {
+.menu-side-bar > li:hover a {
   color: #fff;
 }
 
-.menu > li a {
+.menu-side-bar > li a {
   text-decoration: none;
   color: #818181;
 }
 
-.menu > li a:first-child {
+.menu-side-bar > li a:first-child {
   margin-right: 10px;
 }
 
-/* Components */
+.btn {
+  background-color: #f58220;
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ffa200;
+}
+
+.btn a {
+  color: #fff;
+}
+
+.btn-square {
+  min-width: 45px;
+  min-height: 45px;
+  padding: 10px;
+}
+
+.btn-rectangle {
+  padding: 13px 30px;
+}
+
 /* Sections */
 /* Pages / Views */
 body {

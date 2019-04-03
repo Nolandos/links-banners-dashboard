@@ -1,4 +1,4 @@
-.menu {
+.menu-side-bar {
     >li {
         list-style-type: none;
         padding: 15px;
@@ -8,7 +8,7 @@
             background-color: $sidebar-hover-color;
             border-left: 5px solid $button-color;            
             a {
-                color: #fff;
+                color: $white-color;
             } 
         }
         a {
