@@ -4,6 +4,7 @@
 @import "normalize";
 @import "layout";
 @import "colorBox";
+@import "components/menu";
 
 /* Components */
 //import "components/form_field";
@@ -13,3 +14,7 @@
 
 /* Pages / Views */
 //import "pages/registration";
+
+body {
+    font-family: $brand-font;
+}
