@@ -24,6 +24,7 @@ body {
 .sidebar {
     height: 1000px;
     width: 15%;
+    margin-top: 0;
     min-width: 165px;
     background-color: $sidebar-color;
     position: fixed;
@@ -54,4 +55,17 @@ body {
     left: 15%;
     top: 50px;
     z-index: -1;
-}   
+}
+
+.wrapper {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.hamburger-ico {
+    color: #fff;
+    text-decoration: none;
+}

@@ -458,6 +458,7 @@ body {
 .sidebar {
   height: 1000px;
   width: 15%;
+  margin-top: 0;
   min-width: 165px;
   background-color: #191919;
   position: fixed;
@@ -489,5 +490,20 @@ body {
   left: 15%;
   top: 50px;
   z-index: -1;
+}
+
+.wrapper {
+  height: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.hamburger-ico {
+  color: #fff;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
