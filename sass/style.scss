@@ -1,5 +1,4 @@
 @import "variables";
-@import "grid";
 @import "mixins";
 @import "normalize";
 @import "layout";
@@ -19,5 +18,31 @@
 //import "pages/registration";
 
 body {
-    font-family: $brand-font;
-}          
+    font-family: $brand-font; 
+} 
+
+.sidebar {
+    height: 1000px;
+    width: 15%;
+    //background-color: $sidebar-color;
+    position: fixed;
+    border: 2px solid green;
+}
+
+.top-bar {
+    height: 50px;
+    width: 85%;
+    border: 2px solid $font-color;
+    position: fixed;
+    left: 15%; 
+    display: flex;
+}
+
+.main {
+    width: 80%;
+    height: 1000px;
+    //border: 2px solid orange;
+    position: relative;
+    left: 20%;
+    top: 50px;
+}   
