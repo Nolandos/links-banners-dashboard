@@ -483,6 +483,7 @@ body {
 
 .main {
   width: 85%;
+  height: 100vh;
   background-color: #f5f5f2;
   position: relative;
   left: 15%;
@@ -514,10 +515,29 @@ body {
 }
 
 .managers-table .title {
-  text-align: center;
   text-transform: uppercase;
   color: #818181;
   font-size: 0.9em;
   margin-top: 20px;
+  padding: 15px 15px 0 20px;
+}
+
+.managers-table .manager-field {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 15px 15px 0 20px;
+}
+
+.managers-table .manager-field .person-name {
+  text-decoration: none;
+  color: #56819f;
+  padding-left: 10px;
+  font-size: 1em;
+}
+
+.managers-table .manager-field .person-photo {
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
