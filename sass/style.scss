@@ -108,6 +108,24 @@ body {
                 }
             }
         }
+
+        .data-information {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .information-cell {
+              width: 50%;
+              display: flex;
+              &:nth-child(2n+1) {
+                justify-content: flex-end;  
+              }
+
+              &:nth-child(2n+0) {
+              justify-content: flex-start;
+              }
+            }
+        }
     }
 }
 

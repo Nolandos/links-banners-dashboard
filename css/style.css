@@ -558,6 +558,31 @@ body {
   color: #818181;
 }
 
+.main .general-statistic .data-information {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main .general-statistic .data-information .information-cell {
+  width: 50%;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .general-statistic .data-information .information-cell:nth-child(2n+1) {
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
+.main .general-statistic .data-information .information-cell:nth-child(2n+0) {
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+}
+
 .wrapper {
   height: 50px;
   display: -ms-flexbox;
