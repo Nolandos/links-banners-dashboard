@@ -485,8 +485,7 @@ body {
   width: 85%;
   height: 100vh;
   background-color: #f5f5f2;
-  left: 15%;
-  top: 50px;
+  margin-left: 15%;
   z-index: -1;
   display: -ms-flexbox;
   display: flex;
@@ -500,7 +499,7 @@ body {
   width: 95%;
   height: 600px;
   background-color: #fff;
-  margin-top: 2%;
+  margin-top: 5%;
   box-shadow: 0px 0px 30px -13px black;
 }
 
@@ -519,6 +518,7 @@ body {
 .main .general-statistic .time-range {
   border-bottom: 1px solid #818181;
   height: 20%;
+  min-height: 90px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
