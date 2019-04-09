@@ -1,0 +1,25 @@
+.wrapper {
+    height: auto;
+    margin-top: 2%;
+
+    .data-information {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 60%;
+
+
+        .information-cell {
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid $line-color;
+
+            .title {
+                font-size: 1em;
+                font-size: bold;
+                color: $font-color;
+            }
+        }
+    }
+}

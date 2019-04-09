@@ -1,0 +1,64 @@
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "colorBox";  
+ 
+ 
+/* Components */
+   
+@import "components/menuSideBar"; 
+@import "components/menuTop";         
+@import "components/buttons";
+@import "components/hamburgerIco";
+
+/* Sections */
+@import "sections/_generalStatistic";
+@import "sections/_managersTable";
+
+/* Pages / Views */
+
+body {
+    font-family: $brand-font; 
+} 
+
+.sidebar {
+    width: 15%;
+    margin-top: 0;
+    min-width: 165px;
+    background-color: $sidebar-color;
+    position: fixed;
+    z-index: 2;
+} 
+
+.top-bar {
+    height: 50px;
+    width: 85%;
+    min-width: 590px; 
+    border: 1px solid $line-color;
+    background-color: #fff;
+    border-top: none;
+    border-left: none;
+    position: fixed;
+    z-index: 1;
+    left: 15%; 
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main {
+    width: 85%;
+    height: 100vh;
+    background-color: $main-bg-color;
+    margin-left: 15%;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
