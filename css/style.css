@@ -470,7 +470,6 @@ template {
 
 .time-range {
   border-bottom: 1px solid #e3e3e3;
-  height: 20%;
   min-height: 90px;
   display: -ms-flexbox;
   display: flex;
@@ -513,7 +512,7 @@ template {
 
 .wrapper {
   height: auto;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 .wrapper .data-information {
@@ -541,44 +540,66 @@ template {
   color: #818181;
 }
 
-.earnings-chart {
-  width: 60%;
-}
-
-.earnings-chart .options-group {
+.options-group {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
 }
 
-.earnings-chart .options-group .option {
-  width: 150px;
-  height: 40px;
+.options-group .option {
   border-radius: 5px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
-  padding: 0 15px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 0 25px;
+  color: #56819f;
+  cursor: pointer;
 }
 
-.earnings-chart .options-group .option-active {
+.options-group .option:first-child .circle {
+  background-color: #80bfca;
+}
+
+.options-group .option:nth-child(2) .circle {
+  background-color: #ff9a38;
+}
+
+.options-group .option:nth-child(3) .circle {
+  background-color: #59b66d;
+}
+
+.options-group .option-active {
   background-color: #f3f3f1;
+  color: #818181;
 }
 
-.earnings-chart .options-group .circle {
+.options-group .circle {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: #000;
+}
+
+.chart {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.earnings-chart {
+  width: 60%;
+  padding-bottom: 5%;
 }
 
 .general-statistic {
   width: 95%;
-  height: 600px;
   background-color: #fff;
   margin-top: 70px;
+  margin-bottom: 70px;
   box-shadow: 0px 0px 30px -13px black;
 }
 
@@ -636,10 +657,14 @@ body {
   font-family: "Open Sans", Helvetica, Arial;
 }
 
+img {
+  width: 100%;
+}
+
 .sidebar {
-  width: 15%;
+  width: 190px;
+  height: 100%;
   margin-top: 0;
-  min-width: 165px;
   background-color: #191919;
   position: fixed;
   z-index: 2;
@@ -647,7 +672,7 @@ body {
 
 .top-bar {
   height: 50px;
-  width: 85%;
+  width: 100vw;
   min-width: 590px;
   border: 1px solid #e3e3e3;
   background-color: #fff;
@@ -655,7 +680,6 @@ body {
   border-left: none;
   position: fixed;
   z-index: 1;
-  left: 15%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
@@ -663,10 +687,9 @@ body {
 }
 
 .main {
-  width: 85%;
-  height: 100vh;
+  height: 100%;
   background-color: #f5f5f2;
-  margin-left: 15%;
+  margin-left: 190px;
   z-index: -1;
   display: -ms-flexbox;
   display: flex;
@@ -677,7 +700,6 @@ body {
 }
 
 .wrapper {
-  height: 50px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;

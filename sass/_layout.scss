@@ -21,10 +21,13 @@ body {
     font-family: $brand-font; 
 } 
 
+img {
+    width: 100%;
+}
 .sidebar {
-    width: 15%;
-    margin-top: 0;
-    min-width: 165px;
+    width: 190px;
+    height: 100%;
+    margin-top: 0;    
     background-color: $sidebar-color;
     position: fixed;
     z-index: 2;
@@ -32,7 +35,7 @@ body {
 
 .top-bar {
     height: 50px;
-    width: 85%;
+    width: 100vw;
     min-width: 590px; 
     border: 1px solid $line-color;
     background-color: #fff;
@@ -40,16 +43,16 @@ body {
     border-left: none;
     position: fixed;
     z-index: 1;
-    left: 15%; 
+
     display: flex;
     justify-content: flex-end;
 }
 
 .main {
-    width: 85%;
-    height: 100vh;
+    //width: 90%;
+    height: 100%;
     background-color: $main-bg-color;
-    margin-left: 15%;
+    margin-left: 190px;
     z-index: -1;
     display: flex;
     flex-direction: column;
@@ -57,7 +60,6 @@ body {
 }
 
 .wrapper {
-    height: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;

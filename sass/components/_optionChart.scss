@@ -1,0 +1,40 @@
+.options-group {
+    display: flex;
+    justify-content: space-between;
+
+    .option {
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 25px;
+        color: $person-name-color;
+        cursor: pointer;
+        &:first-child {
+            .circle {
+                background-color: $tabs-circle-first;
+            }
+        }
+        &:nth-child(2) {
+            .circle {
+                background-color: $tabs-circle-second;
+            }
+        }
+        &:nth-child(3) {
+            .circle {
+                background-color: $tabs-circle-third;
+            }
+        }            
+    }
+
+    .option-active {
+        background-color: $tabs-active-color;
+        color: $font-color;
+    }
+    
+    .circle {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+}
