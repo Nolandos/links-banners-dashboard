@@ -499,7 +499,7 @@ body {
   width: 95%;
   height: 600px;
   background-color: #fff;
-  margin-top: 5%;
+  margin-top: 70px;
   box-shadow: 0px 0px 30px -13px black;
 }
 
@@ -558,29 +558,58 @@ body {
   color: #818181;
 }
 
-.main .general-statistic .data-information {
+.main .general-statistic .wrapper {
+  height: auto;
+  margin-top: 2%;
+}
+
+.main .general-statistic .wrapper .data-information {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 60%;
 }
 
-.main .general-statistic .data-information .information-cell {
-  width: 50%;
+.main .general-statistic .wrapper .data-information .information-cell {
+  width: 40%;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  border-bottom: 1px solid #e3e3e3;
 }
 
-.main .general-statistic .data-information .information-cell:nth-child(2n+1) {
-  -ms-flex-pack: end;
-      justify-content: flex-end;
+.main .general-statistic .wrapper .data-information .information-cell .title {
+  font-size: 1em;
+  font-size: bold;
+  color: #818181;
 }
 
-.main .general-statistic .data-information .information-cell:nth-child(2n+0) {
-  -ms-flex-pack: start;
-      justify-content: flex-start;
+.main .general-statistic .earnings-chart {
+  width: 60%;
+}
+
+.main .general-statistic .earnings-chart .options-group {
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid red;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+.main .general-statistic .earnings-chart .options-group .option {
+  width: 100px;
+  border: 2px solid green;
+}
+
+.main .general-statistic .earnings-chart .options-group .circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #000;
 }
 
 .wrapper {
