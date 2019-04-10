@@ -26,11 +26,15 @@ img {
 }
 .sidebar {
     width: 190px;
-    height: 100%;
-    margin-top: 0;    
+    //height: 100%;    
     background-color: $sidebar-color;
     position: fixed;
+    top: 50px;
     z-index: 2;
+    //display: none;
+    transform: translate3d(-100%, 0, 0);
+    -webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
 } 
 
 .top-bar {
@@ -43,7 +47,6 @@ img {
     border-left: none;
     position: fixed;
     z-index: 1;
-
     display: flex;
     justify-content: flex-end;
 }
@@ -57,6 +60,8 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: margin-left 0.5s;
 }
 
 .wrapper {
