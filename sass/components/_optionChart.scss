@@ -38,3 +38,14 @@
         border-radius: 50%;
     }
 }
+
+@media(max-width: 767px) {
+    
+    .option-xs {
+        transform: scale(0.7);
+    }
+
+    .options-group {
+        flex-direction: column;
+    }
+}

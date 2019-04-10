@@ -1,0 +1,21 @@
+@media(max-width: 767px) {
+    .calendar {
+        width: 70%;
+
+        input {
+            width: 40%;
+        }
+    }
+
+    .option-xs {
+        transform: scale(0.7);
+    }
+
+    .options-group {
+        flex-direction: column;
+    }
+
+    .earnings-chart {
+        width: 90%;
+    }
+}

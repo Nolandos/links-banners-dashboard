@@ -10,6 +10,7 @@
         padding: 5px;
         border-radius: 5px;
         margin-right: 15px;
+        display: flex;
 
         input {
             border: none;
@@ -29,4 +30,15 @@
             color: $font-color;
         }
     }
+}
+
+@media(max-width: 767px) {
+    .calendar {
+        width: 70%;
+
+        input {
+            width: 40%;
+        }
+    }
+
 }
