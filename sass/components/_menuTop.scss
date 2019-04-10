@@ -1,20 +1,21 @@
 .menu-top {
     margin: 0;
+    padding-right: 20px;
     >li {
         list-style-type: none;
         display: inline-block;
         padding: 15px;
         cursor: pointer;
         border-left: 1px solid $line-color;
-        text-align: center;
         &:hover {
                       
         }
         a {
             text-decoration: none;
-            color: $font-color;
-            text-align: center;
-            margin-right: 10px;
+            color: $font-color;  
+            &::before {
+                padding: 0 5px;
+            }
         }
     }
 }
