@@ -818,6 +818,7 @@ img {
   }
   .sidebar {
     overflow-y: scroll;
+    transform: translate3d(0, 0, 0);
   }
 }
 
@@ -830,12 +831,18 @@ img {
       align-items: center;
 }
 
-.show {
+.visibility {
   transform: translate3d(0, 0, 0);
 }
 
-.max-width {
+.toggle-main {
   margin-left: 0;
   transition: margin-left 0.5s;
+}
+
+@media (max-width: 767px) {
+  .visibility {
+    transform: translate3d(-100%, 0, 0);
+  }
 }
 /*# sourceMappingURL=style.css.map */

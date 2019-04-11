@@ -1,6 +1,6 @@
 function toggleMenu(visible) {
-    document.querySelector('.sidebar').classList.toggle('show', visible)
-    document.querySelector('.main').classList.toggle('max-width', visible)
+    document.querySelector('.sidebar').classList.toggle('visibility', visible)
+    document.querySelector('.main').classList.toggle('toggle-main', visible)
   }
 
   document.querySelector('.hamburger-ico').addEventListener('click', function(e) {

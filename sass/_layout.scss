@@ -26,6 +26,7 @@ body {
 img {
     width: 100%;
 }
+
 .sidebar {
     width: 190px;
     height: 100%;    
@@ -75,6 +76,7 @@ img {
 
     .sidebar {
         overflow-y: scroll;
+        transform: translate3d(0, 0, 0);
     }    
 }
 
