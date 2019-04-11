@@ -787,6 +787,28 @@ template {
   color: #ffa200;
 }
 
+@media (max-width: 767px) {
+  .link-row {
+    width: 90%;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .link-row .title,
+  .link-row a,
+  .link-row .ico-wrapper {
+    width: auto;
+    padding: 5px 0;
+    visibility: visible;
+  }
+  .link-row .title .ico,
+  .link-row a .ico,
+  .link-row .ico-wrapper .ico {
+    padding: 5px 15px;
+  }
+}
+
 .general-links {
   margin-top: 20px;
 }
@@ -922,6 +944,12 @@ img {
   .sidebar {
     overflow-y: scroll;
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    width: 100%;
   }
 }
 
