@@ -4,16 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title></title>
+        <link rel="stylesheet" type="text/css" href="vendor/fontello/css/fontello.css">
         <link rel="stylesheet" type="text/css" href="vendor/css/Glyphter.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head> 
 	<body>
-        <div class="wrapper-menu">
-            <a href="#"><img src="images/logo.png"></a>
-            <a href="#" class="fas fa-bars hamburger-ico"></a>
-        </div> 
+        
         <nav class="top-bar">
             <ul class="menu-top">
                 <li><a class="icon-wallet"></a><a href="#">$1,500.00</a><a class="icon-arrow-down-small"></a></li>
@@ -22,25 +19,31 @@
                 <li><a href="#" class="icon-quit"></a></li>
             </ul>                                         
         </nav>
-        <section class="sidebar visibility">                
+
+        <nav class="sidebar-container">
+            <div class="wrapper-menu">
+                <a href="#"><img src="images/logo.png" alt="logo"></a>
+                <a href="#" class="icon-menu hamburger-ico"></a>
+            </div>  
+            <section class="sidebar visibility">               
                 <ul class="menu-side-bar">
-                        <li><a class="icon-general"></a><a href="#">General</a></li>
-                        <li><a class="icon-details"></a><a href="#">Details</a></li>
-                        <li><a class="icon-links"></a><a href="#">Links</a></li>
-                        <li><a class="icon-banners"></a><a href="#">Banners</a></li>
-                        <li><a class="icon-personaldata"></a><a href="#">Personal Data</a></li>
-                        <li><a class="icon-payout"></a><a href="#">Payout</a></li>
-                        <li><a class="icon-postback"></a><a href="#">Postback</a></li> 
-                    </ul>
+                        <li><a class="icon-general">General</a></li>
+                        <li><a class="icon-details">Details</a></li>
+                        <li><a class="icon-links">Links</a></li>
+                        <li><a class="icon-banners">Banners</a></li>
+                        <li><a class="icon-personaldata">Personal Data</a></li>
+                        <li><a class="icon-payout">Payout</a></li>
+                        <li><a class="icon-postback">Postback</a></li> 
+                </ul>
                 <div class="managers-table">
                     <h2 class="title">Your Manager</h2>
-                    <div class="manager-field">
+                    <section class="manager-field">
                         <div class="wrapper">
                             <div class="online-ico"></div>
                             <img class="person-photo" src="images/manager-1.png">
                         </div>    
                         <a class="person-name" href="#">Mikhael E.</a>
-                    </div>
+                    </section>
                 </div>
                 <div class="user-options">
                     <h2 class="title">User</h2>
@@ -51,7 +54,8 @@
                         <li><a href="#" class="icon-quit">Exit</a></li>
                     </ul>
                 </div> 
-        </section>
+            </section>
+        </nav>
         <section class="main">
             <section class="general-statistic">
                 <header class="page-header">

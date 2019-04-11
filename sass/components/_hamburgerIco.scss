@@ -1,5 +1,8 @@
 .hamburger-ico {
     font-size: 1.3em;
-    color: #fff;
+    color: $font-color;
     text-decoration: none;
+    &:hover {
+        color: #fff;
+    }
 }

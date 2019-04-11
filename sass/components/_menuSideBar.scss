@@ -1,7 +1,6 @@
 .menu-side-bar {
     padding-left: 0;
     >li {
-        list-style-type: none;
         padding: 15px;
         background-color: $sidebar-color;
         cursor: pointer;
@@ -12,11 +11,12 @@
                 color: $white-color;
             } 
         }
+
         a {
             text-decoration: none;
             color: $font-color;
-            &:first-child {
-                margin-right: 10px;
+            &:before {
+                padding-right: 10px;
             }
         }
     }
