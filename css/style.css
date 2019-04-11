@@ -735,8 +735,74 @@ template {
   padding-left: 15px;
 }
 
+.link-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 65%;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 10px 0;
+}
+
+.link-row:hover {
+  background-color: #f3f3f1;
+}
+
+.link-row:hover .ico-wrapper {
+  visibility: visible;
+}
+
+.link-row .title {
+  width: 40%;
+  color: #818181;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.link-row a {
+  width: 40%;
+  text-decoration: none;
+  color: #56819f;
+}
+
+.link-row .ico-wrapper {
+  width: 10%;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: hidden;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.link-row .ico-wrapper .ico {
+  font-size: 1.1em;
+  color: #818181;
+}
+
+.link-row .ico-wrapper .ico:hover {
+  color: #ffa200;
+}
+
 .general-links {
   margin-top: 20px;
+}
+
+.general-links .links-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.general-links .links-container .btn {
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 
 .manager-field {

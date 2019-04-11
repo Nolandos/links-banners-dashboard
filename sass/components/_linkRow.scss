@@ -1,0 +1,44 @@
+.link-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    border-top: 1px solid $line-color;
+    border-bottom: 1px solid $line-color;
+    padding: 10px 0;
+    &:hover {
+        background-color: $tabs-active-color;
+
+        .ico-wrapper {
+            visibility: visible;
+        }
+    }
+
+    .title {
+        width: 40%;
+        color: $font-color;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    a {
+        width: 40%;
+        text-decoration: none;
+        color: $person-name-color;
+    }
+
+    .ico-wrapper {
+        width: 10%;
+        display: flex;
+        visibility: hidden;
+        justify-content: space-around;
+
+        .ico {
+            font-size: 1.1em;
+            color: $font-color;
+            &:hover {
+                color: $button-hover-color;
+            }
+        }
+    }
+    
+}
