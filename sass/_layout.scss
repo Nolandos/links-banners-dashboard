@@ -1,8 +1,8 @@
 @import "variables";
 @import "mixins";
 @import "normalize";
-@import "colorBox"; 
- 
+@import "colorBox";  
+
  
 /* Components */
    
@@ -15,9 +15,12 @@
 
 /* Sections */
 @import "sections/_generalStatistic";
+@import "sections/_generalLinks";
 @import "sections/_managersTable";
 
 /* Pages / Views */
+  
+
 
 body {
     font-family: $brand-font; 
@@ -25,6 +28,12 @@ body {
 
 img {
     width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .sidebar {
@@ -80,8 +89,3 @@ img {
     }    
 }
 
-.wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}

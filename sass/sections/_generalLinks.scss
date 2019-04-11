@@ -1,0 +1,11 @@
+/*EXTENDS*/
+@import "../extends/article";
+
+/*COMPONENTS*/
+@import "../components/pageHeader";
+@import "../components/linkRow";
+
+.general-links {
+    @extend .article;
+    margin-top: 20px;
+}
