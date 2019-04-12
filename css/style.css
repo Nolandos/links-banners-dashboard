@@ -379,7 +379,7 @@ template {
 }
 
 .menu-side-bar > li {
-  padding: 15px;
+  padding: 0 15px;
   background-color: #191919;
   cursor: pointer;
 }
@@ -396,6 +396,11 @@ template {
 .menu-side-bar > li a {
   text-decoration: none;
   color: #818181;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 50px;
 }
 
 .menu-side-bar > li a:before {
@@ -903,6 +908,59 @@ template {
   font-weight: bold;
   text-transform: uppercase;
   padding: 5px 15px;
+}
+
+.time-range {
+  border-bottom: 1px solid #e3e3e3;
+  min-height: 90px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.time-range .calendar {
+  border: 1px solid #e3e3e3;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 15px;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.time-range .calendar input {
+  border: none;
+  padding: 10px;
+}
+
+.time-range .calendar input:first-child {
+  border-right: 1px solid #e3e3e3;
+}
+
+.time-range .calendar input:-ms-input-placeholder {
+  color: #000;
+}
+
+.time-range .calendar input::placeholder {
+  color: #000;
+}
+
+.time-range .calendar .icon-calendar {
+  padding: 10px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #818181;
+}
+
+@media (max-width: 767px) {
+  .calendar {
+    width: 70%;
+  }
+  .calendar input {
+    width: 40%;
+  }
 }
 
 /* Pages / Views */
