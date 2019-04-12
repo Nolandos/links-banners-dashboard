@@ -3,7 +3,7 @@
 @import "normalize";
 @import "colorBox";  
 
-      
+       
 /* Components */
    
 @import "components/menuSideBar"; 
@@ -15,11 +15,10 @@
 
 /* Sections */
 @import "sections/_generalStatistic";
-@import "sections/_generalLinks";
 @import "sections/_managersTable";
 @import "sections/_details";
 @import "sections/_banners";
-
+@import "sections/_generalLinks";
 /* Pages / Views */
   
 
