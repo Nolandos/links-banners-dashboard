@@ -9,3 +9,17 @@ function toggleMenu(visible) {
     e.preventDefault();
     toggleMenu()
   });
+
+
+  $(document).ready(function() { 
+    //Strona ladowana jako pierwsza:
+    $('.main').load('pages/general.html');
+  
+    //Ladowanie pozostalych podstron:
+    $('ul.menu-side-bar li a').click(function() {
+       var podstrona = $(this).attr('href');
+       $('.main').html('Ładuję...');
+       $('.main').load('pages/'+podstrona);
+       return false;
+    });
+ });

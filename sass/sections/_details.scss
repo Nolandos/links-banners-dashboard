@@ -1,0 +1,10 @@
+/*EXTENDS*/
+@import "../extends/article";
+
+/*COMPONENTS*/
+@import "../components/pageHeader";
+@import "../components/_timeRange";
+
+.details {
+    @extend .article;
+}
