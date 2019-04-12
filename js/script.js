@@ -1,3 +1,5 @@
+/*FUNCTION FOR TOGGLE SIDEBAR*/
+
 function toggleMenu(visible) {
     document.querySelector('.sidebar').classList.toggle('visibility', visible)
     document.querySelector('.main').classList.toggle('toggle-main', visible)
