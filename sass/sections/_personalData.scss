@@ -2,5 +2,62 @@
 @import "../components/inputs";
 
 .personal-data {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .page-header {
+        width:100%;
+        align-self: flex-start;
+    } 
+
+    .personal-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        >button {
+            margin: 3% 0;
+        }
+
+        > section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: 1px solid $line-color;
+            width: 100%;
+            padding: 3% 0;
+
+            .input-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                padding: 10px 0;
+                
+                >input {
+                    width: 40%;
+                    padding-left: 15px;
+                }
+
+                >label {
+                    width: 25%;
+                }
+                
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .personal-data {   
+        .personal-form {
+            > section {    
+                .input-wrapper {
+                    width: 100%;  
+                }
+            }
+        }
+    }
 }

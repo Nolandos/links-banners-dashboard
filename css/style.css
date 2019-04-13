@@ -564,6 +564,73 @@ label {
   font-weight: bold;
 }
 
+.personal-data {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.personal-data .page-header {
+  width: 100%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.personal-data .personal-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+}
+
+.personal-data .personal-form > button {
+  margin: 3% 0;
+}
+
+.personal-data .personal-form > section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  border-bottom: 1px solid #e3e3e3;
+  width: 100%;
+  padding: 3% 0;
+}
+
+.personal-data .personal-form > section .input-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 50%;
+  padding: 10px 0;
+}
+
+.personal-data .personal-form > section .input-wrapper > input {
+  width: 40%;
+  padding-left: 15px;
+}
+
+.personal-data .personal-form > section .input-wrapper > label {
+  width: 25%;
+}
+
+@media (max-width: 767px) {
+  .personal-data .personal-form > section .input-wrapper {
+    width: 100%;
+  }
+}
+
 /*EXTENDS*/
 .article, .general-statistic, .details, .banners, .general-links {
   width: 95%;

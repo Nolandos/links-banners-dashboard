@@ -4,7 +4,7 @@
 @import "colorBox";  
 
        
-/* Components */         
+/* Components */                                      
    
 @import "components/menuSideBar"; 
 @import "components/menuTop";         
@@ -59,7 +59,7 @@ img {
     border-top: none;
     border-left: none;
     position: fixed;
-    z-index: 1;
+    z-index: 1;    
     display: flex;
     justify-content: flex-end;
 }
@@ -80,7 +80,7 @@ img {
     .main {
         margin-left: 0;
     }
-
+ 
     .top-bar {
         display: none;     
     }
