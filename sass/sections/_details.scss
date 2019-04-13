@@ -1,10 +1,26 @@
-/*EXTENDS*/
-@import "../extends/article";
-
 /*COMPONENTS*/
 @import "../components/pageHeader";
 @import "../components/_timeRange";
 
 .details {
-    @extend .article;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .table {
+            font-size: 0.9em;
+
+            tr {
+                >th {
+                    > a {
+                        padding: 5px 10px;
+                    }
+                }
+                >th {
+                    width: auto;
+                }
+            }
+        }
+    }
 }

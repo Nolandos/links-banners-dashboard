@@ -1,5 +1,6 @@
 /*Components*/
 @import "../components/pagination";
+@import "../components/table";
 
 .payout {
     .container {
@@ -11,70 +12,11 @@
     .time-range {
         width: 100%;
     }
-
-    .payout-table {
-        width: 95%;
-        margin-top: 3%;
-        border-collapse: collapse;
-        tbody {
-            >tr {
-                cursor: pointer;
-                &:hover {
-                    background-color: $line-color;
-                }
-            }
-        }
-
-        tr {
-            height: 70px;
-
-            >th {
-                width: 25%;
-                text-align: left;
-                color: $font-color;
-                border-bottom: 2px solid $line-color; 
-                cursor: pointer;
-                &:first-child {
-                    width: 30%;
-                }
-                &:last-child {
-                    width: 15%;
-                }
-
-                >a {
-                    padding: 10px 15px;
-                    width: 100px;
-                    color: $font-color;
-                    text-decoration: none;
-                    &:after {
-                        padding-left: 10px;
-                        visibility: hidden;
-                    }
-
-                    &:hover {
-                        background-color: $line-color;
-                        border-radius: 3px;
-                        color: #000;
-                        &:after {
-                            color: $font-color;
-                            visibility: visible;
-                        }
-                    }
-                }
-            }
-
-            >td {
-                border-bottom: 2px solid $line-color;
-                padding-left: 15px;               
-            }
-
-        }
-    }
 }
 
 
 @media(max-width: 767px) {
-    .payout-table {
+    .table {
         font-size: 0.8em;
     }
 }
