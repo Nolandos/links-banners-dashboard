@@ -631,6 +631,29 @@ label {
   }
 }
 
+/*Components*/
+.pagination {
+  height: 50px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.pagination > a {
+  text-decoration: none;
+  color: #56819f;
+  padding: 15px;
+}
+
+.pagination > a:hover {
+  color: #ffa200;
+}
+
+.pagination > a:before {
+  color: #818181;
+}
+
 /*EXTENDS*/
 .article, .general-statistic, .details, .banners, .general-links {
   width: 95%;

@@ -1,0 +1,16 @@
+.pagination {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    >a {
+        text-decoration: none;
+        color: $person-name-color;
+        padding: 15px;
+        &:hover {
+            color: $button-hover-color;
+        }
+        &:before {
+            color: $font-color;
+        }
+    }
+}
