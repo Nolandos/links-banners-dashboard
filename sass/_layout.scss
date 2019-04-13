@@ -4,7 +4,7 @@
 @import "colorBox";  
 
        
-/* Components */
+/* Components */         
    
 @import "components/menuSideBar"; 
 @import "components/menuTop";         
@@ -14,11 +14,12 @@
 @import "components/hamburgerIco";
 
 /* Sections */
-@import "sections/_generalStatistic";
-@import "sections/_managersTable";
-@import "sections/_details";
-@import "sections/_banners";
-@import "sections/_generalLinks";
+@import "sections/personalData";
+@import "sections/generalStatistic";
+@import "sections/managersTable";
+@import "sections/details";
+@import "sections/banners";
+@import "sections/generalLinks";
 /* Pages / Views */
   
 

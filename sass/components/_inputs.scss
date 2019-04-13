@@ -1,0 +1,17 @@
+input {
+    border: 1px solid $line-color;
+    border-radius: 3px;
+    padding: 7px 10px;
+    outline: none;
+    &:hover {
+        border: 1px solid $font-color; 
+    }
+    &:active {
+        border: 1px solid $font-color;
+    }
+}
+
+label {
+    color: $font-color;
+    font-weight: bold;
+}
