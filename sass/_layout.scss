@@ -2,8 +2,7 @@
 @import "mixins";
 @import "normalize";
 @import "colorBox";  
-
-                                                                            
+                                                                                                  
 /* Components */                                      
    
 @import "components/menuSideBar"; 
@@ -24,8 +23,6 @@
 
 /* Pages / Views */
   
-       
-
 body {
     font-family: $brand-font; 
 } 

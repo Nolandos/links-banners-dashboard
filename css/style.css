@@ -634,17 +634,21 @@ label {
 /*Components*/
 .pagination {
   height: 50px;
+  width: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   margin: 30px 0;
 }
 
 .pagination > a {
   text-decoration: none;
   color: #56819f;
-  padding: 15px;
+  padding: 15px 19px;
+  border-radius: 3px;
 }
 
 .pagination > a:hover {
@@ -653,6 +657,20 @@ label {
 
 .pagination > a:before {
   color: #818181;
+}
+
+.pagination .active {
+  background-color: #e3e3e3;
+  color: #818181;
+}
+
+@media (max-width: 767px) {
+  .pagination {
+    width: 60%;
+  }
+  .pagination > a {
+    padding: 5px 9px;
+  }
 }
 
 .payout .container {
@@ -704,6 +722,7 @@ label {
 
 .payout .payout-table tr > th > a {
   padding: 10px 15px;
+  width: 100px;
   color: #818181;
   text-decoration: none;
 }
@@ -727,6 +746,12 @@ label {
 .payout .payout-table tr > td {
   border-bottom: 2px solid #e3e3e3;
   padding-left: 15px;
+}
+
+@media (max-width: 767px) {
+  .payout-table {
+    font-size: 0.8em;
+  }
 }
 
 /*EXTENDS*/

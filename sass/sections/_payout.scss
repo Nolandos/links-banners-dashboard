@@ -43,6 +43,7 @@
 
                 >a {
                     padding: 10px 15px;
+                    width: 100px;
                     color: $font-color;
                     text-decoration: none;
                     &:after {
@@ -68,5 +69,12 @@
             }
 
         }
+    }
+}
+
+
+@media(max-width: 767px) {
+    .payout-table {
+        font-size: 0.8em;
     }
 }

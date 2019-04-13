@@ -1,12 +1,15 @@
 .pagination {
     height: 50px;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 30px 0;
     >a {
         text-decoration: none;
         color: $person-name-color;
-        padding: 15px;
+        padding: 15px 19px;
+        border-radius: 3px;
         &:hover {
             color: $button-hover-color;
         }
@@ -14,4 +17,19 @@
             color: $font-color;
         }
     }
+    .active {
+        background-color: $line-color;
+        color: $font-color;
+    }
+}
+
+@media(max-width: 767px) {
+    .pagination {
+        width: 60%;
+
+        >a {
+            padding: 5px 9px;
+        }
+    }
+
 }
