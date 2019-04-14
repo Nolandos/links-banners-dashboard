@@ -4,7 +4,7 @@
 @import "colorBox";  
                                                                                                       
 /* Components */                                             
-                                                           
+                                                                 
 @import "components/menuSideBar"; 
 @import "components/menuTop";         
 @import "components/buttons";
@@ -18,10 +18,10 @@
 @import "sections/personalData";
 @import "sections/payout";
 @import "sections/generalStatistic"; 
-@import "sections/managersTable";
+@import "sections/managersTable";  
 @import "sections/details";
 @import "sections/banners";
-@import "sections/generalLinks";
+@import "sections/generalLinks"; 
 
 /* Pages / Views */
   
@@ -66,6 +66,7 @@ img {
 }
 
 .main {
+    min-height: 100vh;
     height: 100%;
     background-color: $main-bg-color;
     margin-left: 190px;

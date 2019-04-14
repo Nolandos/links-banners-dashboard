@@ -572,7 +572,6 @@ template {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  width: 200px;
   background-image: url("../../images/arrow-select.svg");
   background-repeat: no-repeat;
   background-position: 97%;
@@ -589,6 +588,20 @@ template {
   width: 100%;
 }
 
+.postback .postback-form .wrapper {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 50%;
+  min-height: 20%;
+  padding: 0 20px;
+  margin-top: 0;
+}
+
+.postback .postback-form .wrapper label {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
 .postback .postback-form .textarea-container {
   width: 100%;
   display: -ms-flexbox;
@@ -598,24 +611,29 @@ template {
   margin-bottom: 3%;
 }
 
-.postback .postback-form .textarea-container .wrapper {
-  -ms-flex-direction: column;
-      flex-direction: column;
-  width: 50%;
-  min-height: 20%;
-  padding: 0 20px;
-  margin-top: 0;
-}
-
-.postback .postback-form .textarea-container .wrapper label {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
 .postback .postback-form .textarea-container .textarea {
   margin-top: 3%;
   width: 95%;
   min-height: 170px;
+}
+
+.postback .postback-form .select-container {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 3%;
+}
+
+.postback .postback-form .select-container .wrapper {
+  width: 33%;
+  padding: 0 10px;
+}
+
+.postback .postback-form .select-container .wrapper .select {
+  margin-top: 5%;
+  width: 100%;
 }
 
 /*COMPONENTS*/
@@ -1520,6 +1538,7 @@ img {
 }
 
 .main {
+  min-height: 100vh;
   height: 100%;
   background-color: #f5f5f2;
   margin-left: 190px;

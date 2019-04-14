@@ -10,6 +10,18 @@
         align-items: center;
         width: 100%;
 
+        .wrapper {
+            flex-direction: column;
+            width: 50%;
+            min-height: 20%;
+            padding: 0 20px;
+            margin-top: 0;
+
+            label {
+                align-self: flex-start;
+            }
+        }
+
        
 
         .textarea-container {
@@ -18,22 +30,28 @@
             justify-content: space-around;
             margin-bottom: 3%;
             
-            .wrapper {
-                flex-direction: column;
-                width: 50%;
-                min-height: 20%;
-                padding: 0 20px;
-                margin-top: 0;
-
-                label {
-                    align-self: flex-start;
-                }
-            }
+            
 
             .textarea {
                 margin-top: 3%;
                 width: 95%;
                 min-height: 170px;
+            }
+        }
+
+        .select-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 3%;
+
+            .wrapper {
+                width: 33%;
+                padding: 0 10px;
+                .select {
+                    margin-top: 5%;
+                    width: 100%;
+                }
             }
         }
     }    
