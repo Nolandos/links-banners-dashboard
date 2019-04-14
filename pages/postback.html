@@ -1,0 +1,35 @@
+<section class="postback article">
+    <header class="page-header">
+        <h1 class="title">New Postback</h1>
+    </header>
+    <p>You can insert some parameters in this postback:</p>
+    <form class="postback-form">
+        <section class="textarea-container">
+            <label for="signup">Signup</label>
+            <textarea id="signup" class="textarea" rows="4" cols="50"></textarea>
+            <label for="deposit">Deposit</label>
+            <textarea id="deposit" class="textarea" rows="4" cols="50"></textarea>
+        </section>
+        <section class="select-container">
+            <label for="postback-type">Postback type</label>
+            <select id="postback-type" class="select">
+                <option value="">S2S (http://..)</option>
+            </select>
+
+            <label for="to-countries">To countries</label>
+            <select id="to-countries" class="select">
+                <option value="">Select countries</option>
+            </select>
+
+            <label for="sending options">Sending options</label>
+            <select id="sending-options" class="select">
+                <option value="">Select</option>
+            </select>
+        </section>
+        <section class="other-container">
+            <div class="checkbox-container"></div>
+            <div class="send-after-container"></div>
+        </section>
+        <button type="submit" class="btn btn-rectangle">Save</button>
+    </form>
+</section>
