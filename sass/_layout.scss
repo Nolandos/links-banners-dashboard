@@ -4,19 +4,20 @@
 @import "colorBox";  
                                                                                                       
 /* Components */                                             
-   
+                                 
 @import "components/menuSideBar"; 
 @import "components/menuTop";         
 @import "components/buttons";
 @import "components/navUp";
 @import "components/menuTopSidebar";
 @import "components/hamburgerIco";
-
+ 
 /* Sections */
+@import "sections/postback"; 
 @import "sections/links";
 @import "sections/personalData";
 @import "sections/payout";
-@import "sections/generalStatistic";
+@import "sections/generalStatistic"; 
 @import "sections/managersTable";
 @import "sections/details";
 @import "sections/banners";

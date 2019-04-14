@@ -556,6 +556,65 @@ template {
   padding: 5px 15px;
 }
 
+.textarea {
+  border-radius: 3px;
+  border-color: #e3e3e3;
+  outline: none;
+  padding: 15px;
+  font-size: 0.8em;
+  resize: none;
+}
+
+.postback .postback-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+}
+
+.postback .postback-form .textarea-container {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.postback .postback-form .textarea-container .wrapper {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 50%;
+  min-height: 20%;
+  padding: 0 20px;
+}
+
+.postback .postback-form .textarea-container .wrapper label {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.postback .postback-form .textarea-container .textarea {
+  margin-top: 3%;
+  width: 95%;
+  min-height: 170px;
+}
+
+/*COMPONENTS*/
+.page-header {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.page-header .title {
+  font-size: 1em;
+  color: #818181;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px 15px;
+}
+
 .link-row {
   display: -ms-flexbox;
   display: flex;
