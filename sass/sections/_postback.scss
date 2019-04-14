@@ -1,7 +1,7 @@
 /*COMPONENTS*/
 @import "../components/pageHeader";
 @import "../components/textarea";
-
+@import "../components/selectInput";
 
 .postback {
     .postback-form {
@@ -16,13 +16,15 @@
             width: 100%;
             display: flex;
             justify-content: space-around;
+            margin-bottom: 3%;
             
             .wrapper {
                 flex-direction: column;
                 width: 50%;
                 min-height: 20%;
                 padding: 0 20px;
-                
+                margin-top: 0;
+
                 label {
                     align-self: flex-start;
                 }

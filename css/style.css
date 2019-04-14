@@ -565,6 +565,20 @@ template {
   resize: none;
 }
 
+.select {
+  padding: 10px;
+  border-color: #e3e3e3;
+  border-radius: 3px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 200px;
+  background-image: url("../../images/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-position: 97%;
+  background-size: 15px;
+}
+
 .postback .postback-form {
   display: -ms-flexbox;
   display: flex;
@@ -581,6 +595,7 @@ template {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 3%;
 }
 
 .postback .postback-form .textarea-container .wrapper {
@@ -589,6 +604,7 @@ template {
   width: 50%;
   min-height: 20%;
   padding: 0 20px;
+  margin-top: 0;
 }
 
 .postback .postback-form .textarea-container .wrapper label {
