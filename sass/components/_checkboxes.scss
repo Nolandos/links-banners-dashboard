@@ -1,0 +1,52 @@
+.container {
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"]{
+    display: none;
+    &:checked {
+        + label span.checkbox::before {
+            background-color: #04ae00;
+            border: none;
+        }
+        + label span.checkbox::after {
+            color: #fff;
+        }
+    }
+}
+
+label {
+    position: relative;
+}
+
+span {
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+
+span.checkbox::before {
+    width: 27px;
+    height: 27px;
+    background-color: #fff;
+    left: -35px;
+    box-sizing: border-box;
+    border: 1px solid $font-color;
+    transition: border-color .2s;
+}
+
+span.checkbox::after {
+    content: '\e801';
+    font-family: 'fontello';
+    left: -30px;
+    top: -5px;
+    font-size: 25px;
+    color: transparent;
+    transition: color .2s;
+  }

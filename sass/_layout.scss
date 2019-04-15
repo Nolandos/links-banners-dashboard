@@ -1,9 +1,9 @@
-@import "variables";
+@import "variables";               
 @import "mixins";
 @import "normalize";
-@import "colorBox";  
+@import "colorBox";    
                                                                                                       
-/* Components */                                             
+/* Components */                                                            
                                                                  
 @import "components/menuSideBar"; 
 @import "components/menuTop";         
@@ -11,8 +11,9 @@
 @import "components/navUp";
 @import "components/menuTopSidebar";
 @import "components/hamburgerIco";
+@import "components/checkboxes";
  
-/* Sections */
+/* Sections */   
 @import "sections/postback"; 
 @import "sections/links";
 @import "sections/personalData";
