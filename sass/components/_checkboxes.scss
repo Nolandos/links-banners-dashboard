@@ -1,4 +1,4 @@
-.container {
+.wrapper {
     margin-bottom: 10px;
 }
 
@@ -20,6 +20,8 @@ label {
 }
 
 span {
+    margin-left: 10px;
+
     &::before,
     &::after {
         content: '';

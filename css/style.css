@@ -542,7 +542,7 @@ template {
   color: #fff;
 }
 
-.container {
+.wrapper {
   margin-bottom: 10px;
 }
 
@@ -561,6 +561,10 @@ input[type="checkbox"]:checked + label span.checkbox::after {
 
 label {
   position: relative;
+}
+
+span {
+  margin-left: 10px;
 }
 
 span::before, span::after {
@@ -627,6 +631,13 @@ span.checkbox::after {
   background-size: 15px;
 }
 
+.postback .btn {
+  margin: 1% 0;
+  margin-right: 2%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 .postback .postback-form {
   display: -ms-flexbox;
   display: flex;
@@ -683,6 +694,79 @@ span.checkbox::after {
 .postback .postback-form .select-container .wrapper .select {
   margin-top: 5%;
   width: 100%;
+}
+
+.postback .postback-form .other-container {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.postback .postback-form .other-container .checkbox-container {
+  width: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 15px 20px;
+  border-right: 1px solid #e3e3e3;
+  overflow-y: hidden;
+  position: relative;
+  /*
+                &::-webkit-scrollbar {
+                    width: 1.4em;
+                    position: relative;
+                    margin-right: 15px;
+                }
+                 
+                &::-webkit-scrollbar-track {
+                    background-color: $line-color;
+                }
+                 
+                &::-webkit-scrollbar-thumb {
+                  background-color: darkgrey;
+                  outline: 1px solid slategrey;
+                }
+                */
+}
+
+.postback .postback-form .other-container .checkbox-container .scroll-bar-y-rail {
+  width: 30px;
+  background-color: #e3e3e3;
+  height: 70%;
+  top: 15%;
+  position: absolute;
+  right: 10px;
+}
+
+.postback .postback-form .other-container .checkbox-container .title {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #818181;
+  display: block;
+}
+
+.postback .postback-form .other-container .checkbox-container .title::before {
+  content: "Not";
+  text-transform: uppercase;
+  color: #FF0000;
+  margin-right: 10px;
+}
+
+.postback .postback-form .other-container .checkbox-container .wrapper {
+  padding-left: 45px;
+  min-height: 15%;
+}
+
+.postback .postback-form .other-container .checkbox-container .wrapper > label {
+  font-weight: 400;
+  color: #000;
+}
+
+.postback .postback-form .other-container .send-after-container {
+  width: 50%;
 }
 
 /*COMPONENTS*/
