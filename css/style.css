@@ -1704,6 +1704,108 @@ img {
   }
 }
 
+.send-after-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.send-after-container .progress-bar {
+  width: 93%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.send-after-container .progress-bar::before {
+  content: '0';
+  position: relative;
+  left: -45.5%;
+  bottom: 7px;
+}
+
+.send-after-container .progress-bar::after {
+  content: '168';
+  position: relative;
+  left: 44%;
+  bottom: 117px;
+}
+
+.send-after-container .progress-bar .myProgress {
+  width: 93%;
+  background-color: #e3e3e3;
+}
+
+.send-after-container .progress-bar .myBar {
+  width: 0;
+  height: 10px;
+  background-color: #f58220;
+}
+
+.send-after-container .progress-bar .range-bar {
+  width: 100%;
+  -webkit-appearance: none;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+}
+
+.send-after-container .progress-bar .label-wrapper {
+  width: 100%;
+  margin-right: -20px;
+}
+
+.send-after-container .progress-bar .label-wrapper label {
+  left: 0;
+  color: #000;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  background-image: url("images/arrow-range.png");
+  background-repeat: no-repeat;
+  background-size: 35px;
+  background-position: 50% 50%;
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
 .visibility {
   transform: translate3d(0, 0, 0);
 }
