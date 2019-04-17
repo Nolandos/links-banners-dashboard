@@ -37,6 +37,8 @@
         <section class="other-container">
             <div class="checkbox-container">
                 <h2 class="title">send statuses</h2>
+
+                <div class="checkboxes">
                 <div class="wrapper">
                     <input type="checkbox" id="checkbox-1">
                     <label for="checkbox-1"><span class="checkbox">checkNumber</span></label>
@@ -72,11 +74,13 @@
                   <div class="wrapper">
                     <input type="checkbox" id="checkbox-9">
                     <label for="checkbox-9"><span class="checkbox">Example 2</span></label>
-                  </div>
-                  <div class="scroll-bar-y-rail">
-                    <div class="scrol-bar-y"></div>
-                  </div>
+                  </div> 
+                </div>                  
+                    <input oninput="scrollBar()"  class="scrol-bar-y" id="scrol-bar-y" type="range" min=0 max=100 step=1 value=0>                
             </div>
+
+            
+                    
             <div class="send-after-container">
               <div class="progress-bar">
                 <div class="myProgress">

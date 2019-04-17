@@ -61,6 +61,48 @@
             width: 100%;
             border-top: 1px solid $line-color;
             border-bottom: 1px solid $line-color;
+            position: relative;
+                               
+                .scrol-bar-y {
+                    position: absolute;
+                    top: 55%;
+                    right: -100px;                    
+                    background-color: $line-color;
+                    width: 250px;                    
+                    transform: rotate(90deg);
+                    appearance: none;
+                    border-radius: 0;
+                    padding: 0;
+
+                    &::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                      }
+                    
+                    &::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        height: 25px;
+                        width: 100px;
+                        background: $font-color;
+                        cursor: pointer; 
+                      }
+                      
+                      /* All the same stuff for Firefox */
+                    &::-moz-range-thumb {
+                        height: 25px;
+                        width: 100px;
+                        background: $font-color;
+                        cursor: pointer; 
+                      }
+                      
+                      /* All the same stuff for IE */
+                    &::-ms-thumb {
+                        height: 25px;
+                        width: 100px;
+                        background: $font-color;
+                        cursor: pointer; 
+                      }
+                }
+           
 
             .checkbox-container {
                 width: 50%;
@@ -68,8 +110,17 @@
                 flex-direction: column;
                 padding: 15px 20px;
                 border-right: 1px solid $line-color;
-                overflow-y: hidden;
                 position: relative;
+
+                .checkboxes {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 15px 20px;
+                    overflow-y: hidden;
+                    overflow-x: hidden;
+                }
+
                 /*
                 &::-webkit-scrollbar {
                     width: 1.4em;
@@ -86,16 +137,7 @@
                   outline: 1px solid slategrey;
                 }
                 */
-
-                .scroll-bar-y-rail {
-                    width: 30px;
-                    background-color: $line-color;
-                    height: 70%;
-                    top: 15%;
-                    position: absolute;
-                    right: 10px;
-                }
-
+              
                 .title {
                     font-size: 1.1em;
                     font-weight: bold;

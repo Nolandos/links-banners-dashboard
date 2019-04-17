@@ -702,6 +702,49 @@ span.checkbox::after {
   width: 100%;
   border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
+  position: relative;
+}
+
+.postback .postback-form .other-container .scrol-bar-y {
+  position: absolute;
+  top: 55%;
+  right: -100px;
+  background-color: #e3e3e3;
+  width: 250px;
+  transform: rotate(90deg);
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+  padding: 0;
+  /* All the same stuff for Firefox */
+  /* All the same stuff for IE */
+}
+
+.postback .postback-form .other-container .scrol-bar-y::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.postback .postback-form .other-container .scrol-bar-y::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 25px;
+  width: 100px;
+  background: #818181;
+  cursor: pointer;
+}
+
+.postback .postback-form .other-container .scrol-bar-y::-moz-range-thumb {
+  height: 25px;
+  width: 100px;
+  background: #818181;
+  cursor: pointer;
+}
+
+.postback .postback-form .other-container .scrol-bar-y::-ms-thumb {
+  height: 25px;
+  width: 100px;
+  background: #818181;
+  cursor: pointer;
 }
 
 .postback .postback-form .other-container .checkbox-container {
@@ -712,7 +755,6 @@ span.checkbox::after {
       flex-direction: column;
   padding: 15px 20px;
   border-right: 1px solid #e3e3e3;
-  overflow-y: hidden;
   position: relative;
   /*
                 &::-webkit-scrollbar {
@@ -732,13 +774,15 @@ span.checkbox::after {
                 */
 }
 
-.postback .postback-form .other-container .checkbox-container .scroll-bar-y-rail {
-  width: 30px;
-  background-color: #e3e3e3;
-  height: 70%;
-  top: 15%;
-  position: absolute;
-  right: 10px;
+.postback .postback-form .other-container .checkbox-container .checkboxes {
+  width: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 15px 20px;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .postback .postback-form .other-container .checkbox-container .title {
@@ -1757,25 +1801,15 @@ img {
   padding-left: 0;
   padding-right: 0;
   position: relative;
+  /* All the same stuff for Firefox */
+  /* All the same stuff for IE */
 }
 
-.send-after-container .progress-bar .label-wrapper {
-  width: 100%;
-  margin-right: -20px;
-}
-
-.send-after-container .progress-bar .label-wrapper label {
-  left: 0;
-  color: #000;
-  font-size: 1em;
-  font-weight: normal;
-}
-
-input[type=range]::-webkit-slider-thumb {
+.send-after-container .progress-bar .range-bar::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
 
-input[type=range]::-webkit-slider-thumb {
+.send-after-container .progress-bar .range-bar::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 50px;
   width: 50px;
@@ -1788,8 +1822,7 @@ input[type=range]::-webkit-slider-thumb {
   background-position: 50% 50%;
 }
 
-/* All the same stuff for Firefox */
-input[type=range]::-moz-range-thumb {
+.send-after-container .progress-bar .range-bar::-moz-range-thumb {
   height: 36px;
   width: 16px;
   border-radius: 3px;
@@ -1797,13 +1830,24 @@ input[type=range]::-moz-range-thumb {
   cursor: pointer;
 }
 
-/* All the same stuff for IE */
-input[type=range]::-ms-thumb {
+.send-after-container .progress-bar .range-bar::-ms-thumb {
   height: 36px;
   width: 16px;
   border-radius: 3px;
   background: #ffffff;
   cursor: pointer;
+}
+
+.send-after-container .progress-bar .label-wrapper {
+  width: 100%;
+  margin-right: -20px;
+}
+
+.send-after-container .progress-bar .label-wrapper label {
+  left: 0;
+  color: #000;
+  font-size: 1em;
+  font-weight: normal;
 }
 
 .visibility {
