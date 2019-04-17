@@ -2,7 +2,7 @@
     <header class="page-header">
         <h1 class="title">New Postback</h1>
     </header>
-    <p>You can insert some parameters in this postback:</p>
+    <p class="description">You can insert some parameters in this postback:</p>
     <form class="postback-form">
         <section class="textarea-container">
             <div class="wrapper">
@@ -37,54 +37,51 @@
         <section class="other-container">
             <div class="checkbox-container">
                 <h2 class="title">send statuses</h2>
-
                 <div class="checkboxes">
-                <div class="wrapper">
-                    <input type="checkbox" id="checkbox-1">
-                    <label for="checkbox-1"><span class="checkbox">checkNumber</span></label>
-                  </div>
-                  <div class="wrapper">
-                    <input type="checkbox" id="checkbox-2">
-                    <label for="checkbox-2"><span class="checkbox">noAnswer</span></label>
-                  </div>
-                  <div class="wrapper">
-                    <input type="checkbox" id="checkbox-3">
-                    <label for="checkbox-3"><span class="checkbox">noCall</span></label>
-                  </div>
-                  <div class="wrapper">
-                    <input type="checkbox" id="checkbox-4">
-                    <label for="checkbox-4"><span class="checkbox">Example 1</span></label>
-                  </div>
-                  <div class="wrapper">
-                    <input type="checkbox" id="checkbox-5">
-                    <label for="checkbox-5"><span class="checkbox">Example 2</span></label>
-                  </div>
-                  <div class="wrapper">
-                    <input type="checkbox" id="checkbox-6">
-                    <label for="checkbox-6"><span class="checkbox">Example 2</span></label>
-                  </div>
-                  <div class="wrapper">
-                    <input type="checkbox" id="checkbox-7">
-                    <label for="checkbox-7"><span class="checkbox">Example 2</span></label>
-                  </div>
-                  <div class="wrapper">
-                    <input type="checkbox" id="checkbox-8">
-                    <label for="checkbox-8"><span class="checkbox">Example 2</span></label>
-                  </div>
-                  <div class="wrapper">
-                    <input type="checkbox" id="checkbox-9">
-                    <label for="checkbox-9"><span class="checkbox">Example 2</span></label>
-                  </div> 
-                </div>                  
-                    <input oninput="scrollBar()"  class="scrol-bar-y" id="scrol-bar-y" type="range" min=0 max=100 step=1 value=0>                
+                    <div class="wrapper">
+                        <input type="checkbox" id="checkbox-1">
+                        <label for="checkbox-1"><span class="checkbox">checkNumber</span></label>
+                    </div>
+                    <div class="wrapper">
+                        <input type="checkbox" id="checkbox-2">
+                        <label for="checkbox-2"><span class="checkbox">noAnswer</span></label>
+                    </div>
+                    <div class="wrapper">
+                        <input type="checkbox" id="checkbox-3">
+                        <label for="checkbox-3"><span class="checkbox">noCall</span></label>
+                    </div>
+                    <div class="wrapper">
+                        <input type="checkbox" id="checkbox-4">
+                        <label for="checkbox-4"><span class="checkbox">Example 1</span></label>
+                    </div>
+                    <div class="wrapper">
+                        <input type="checkbox" id="checkbox-5">
+                        <label for="checkbox-5"><span class="checkbox">Example 2</span></label>
+                    </div>
+                    <div class="wrapper">
+                        <input type="checkbox" id="checkbox-6">
+                        <label for="checkbox-6"><span class="checkbox">Example 2</span></label>
+                    </div>
+                    <div class="wrapper">
+                        <input type="checkbox" id="checkbox-7">
+                        <label for="checkbox-7"><span class="checkbox">Example 2</span></label>
+                    </div>
+                    <div class="wrapper">
+                        <input type="checkbox" id="checkbox-8">
+                        <label for="checkbox-8"><span class="checkbox">Example 2</span></label>
+                    </div>
+                    <div class="wrapper">
+                        <input type="checkbox" id="checkbox-9">
+                        <label for="checkbox-9"><span class="checkbox">Example 2</span></label>
+                    </div> 
+                    </div>                  
+                        <input oninput="scrollBar()"  class="scrol-bar-y" id="scrol-bar-y" type="range" min=0 max=100 step=1 value=0>                
             </div>
 
-            
-                    
             <div class="send-after-container">
               <div class="progress-bar">
-                <div class="myProgress">
-                  <div class="myBar"></div>                
+                <div class="full-progress">
+                  <div class="current-progress"></div>                
                 </div>
                 <input oninput="progress()" class="range-bar" id="range-bar" type="range" min=0 max=100 step=0.59523 value=0>
                 <div class="label-wrapper">
@@ -97,4 +94,3 @@
     </form>
 </section>
 
-<script type="text/javascript" src="js/moj.js"></script> 

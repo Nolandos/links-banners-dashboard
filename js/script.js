@@ -23,3 +23,22 @@ function toggleMenu(visible) {
        return false;
     });
  });
+
+
+ function progress() {
+  let currentProgress = document.querySelector('.current-progress');
+  let rangeBar = document.querySelector('.range-bar');
+  let labelRangBar = document.querySelector('.label-range-bar');
+  let labelWrapper = document.querySelector('.label-wrapper');
+
+  currentProgress.style.width = rangeBar.value + "%";
+  labelRangBar.style.left = rangeBar.value + "%";
+  labelWrapper.style.marginRight = parseInt(rangeBar.value) + "px";
+  labelRangBar.innerHTML = Math.round(rangeBar.value / 0.59523) + " hours";
+}
+
+  
+function scrollBar() {
+  let checkboxes = document.querySelector('.checkboxes'); 
+  checkboxes.scrollTo(0, document.querySelector('.scrol-bar-y').value * 2.5);
+}
