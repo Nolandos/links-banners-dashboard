@@ -1,0 +1,61 @@
+.myProgress {
+    width: 93%;
+    background-color: $line-color;
+}
+
+.myBar {
+    width: 0;
+    height: 10px;
+    background-color: $button-color;
+}
+
+.range-bar {
+    width: 100%;
+    -webkit-appearance: none;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    border: none;
+    &:hover {
+        border: none;
+    }
+    &:active {
+        border: none;
+    }
+
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+      }
+    
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 50px;
+        width: 50px;
+        border: none;
+        background: #ffffff;
+        cursor: pointer; 
+        background-image: url("../images/arrow-range.png");
+        background-repeat: no-repeat;
+        background-size: 35px;
+        background-position: 50% 50%;
+      }
+      
+      /* All the same stuff for Firefox */
+      &::-moz-range-thumb {
+        height: 36px;
+        width: 16px;
+        border-radius: 3px;
+        background: #ffffff;
+        cursor: pointer;
+      }
+      
+      /* All the same stuff for IE */
+      &::-ms-thumb {
+        height: 36px;
+        width: 16px;
+        border-radius: 3px;
+        background: #ffffff;
+        cursor: pointer;
+      }
+    
+}
