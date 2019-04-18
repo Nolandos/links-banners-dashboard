@@ -1,9 +1,9 @@
-@import "variables";                             
+@import "variables";                               
 @import "mixins";
 @import "normalize";
 @import "colorBox";     
                                                                                                        
-/* Components */                                                            
+/* Components */                                                              
                                                                  
 @import "components/menuSideBar";
 @import "components/rangeBar";   
@@ -16,7 +16,7 @@
  
 /* Sections */          
 @import "sections/postback"; 
-@import "sections/links";
+@import "sections/links"; 
 @import "sections/personalData";
 @import "sections/payout";
 @import "sections/generalStatistic"; 

@@ -1,9 +1,9 @@
 .scrol-bar-y {
     position: absolute;
-    top: 55%;
-    right: -100px;                    
+    top: 50%;
+    right: -70px;                    
     background-color: $line-color;
-    width: 250px;                    
+    width: 35%;                    
     transform: rotate(90deg);
     appearance: none;
     border-radius: 0;
@@ -23,7 +23,7 @@
     &::-webkit-slider-thumb {
         -webkit-appearance: none;
         height: 25px;
-        width: 100px;
+        width: 30%;
         background: $font-color;
         cursor: pointer; 
       }

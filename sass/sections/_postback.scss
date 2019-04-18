@@ -65,6 +65,7 @@
         .other-container {
             display: flex;
             width: 100%;
+            max-height: 300px;
             border-top: 1px solid $line-color;
             border-bottom: 1px solid $line-color;
             position: relative;

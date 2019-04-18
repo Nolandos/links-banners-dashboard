@@ -696,10 +696,10 @@ span.checkbox::after {
 
 .scrol-bar-y {
   position: absolute;
-  top: 55%;
-  right: -100px;
+  top: 50%;
+  right: -70px;
   background-color: #e3e3e3;
-  width: 250px;
+  width: 35%;
   transform: rotate(90deg);
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -726,7 +726,7 @@ span.checkbox::after {
 .scrol-bar-y::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 25px;
-  width: 100px;
+  width: 30%;
   background: #818181;
   cursor: pointer;
 }
@@ -818,6 +818,7 @@ span.checkbox::after {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  max-height: 300px;
   border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
   position: relative;
