@@ -512,6 +512,7 @@ template {
   text-decoration: none;
   color: #818181;
   padding: 30px 20px;
+  cursor: pointer;
   display: -ms-flexbox;
   display: flex;
 }

@@ -10,6 +10,20 @@ function toggleMenu(visible) {
     toggleMenu()
   });
 
+  /*FUNCTION FOR LOGIN POPUP*/
+
+  document.querySelector('.log-in').addEventListener('click', (e) => {
+    e.preventDefault();
+    let popupWrapper = document.querySelector('.popup-wrapper');
+
+    popupWrapper.style.display = "none";
+  });
+
+  document.querySelector('.exit').addEventListener('click', (e) => {
+    let popupWrapper = document.querySelector('.popup-wrapper');
+    
+    popupWrapper.style.display = "flex";      
+  });  
 
   $(document).ready(function() { 
     //Strona ladowana jako pierwsza:
