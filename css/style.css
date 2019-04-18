@@ -720,10 +720,10 @@ span.checkbox::after {
 
 .scrol-bar-y {
   position: absolute;
-  top: 50%;
+  top: 150px;
   right: -70px;
   background-color: #e3e3e3;
-  width: 35%;
+  width: 250px;
   transform: rotate(90deg);
   -webkit-appearance: none;
      -moz-appearance: none;
