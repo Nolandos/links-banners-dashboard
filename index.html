@@ -9,7 +9,25 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>   
-	<body> 
+	<body>
+        <div class="popup-wrapper">
+            <section class="popup-login">
+                <header class="page-header">
+                    <h1 class="title">Login</h1>
+                </header>    
+                <form class="login-form">
+                    <div class="wrapper">
+                        <a class="login ico"></a>
+                        <input class="login" type="text" placeholder="Login" required>
+                    </div> 
+                    <div class="wrapper">
+                            <a class="pass ico"></a>    
+                        <input class="password" type="password" placeholder="Password" required>
+                    </div> 
+                    <button type="submit" class="btn btn-rectangle">Enter</button>
+                </form>      
+            </section>
+        </div> 
         
         <nav class="top-bar">
             <ul class="menu-top">
@@ -60,7 +78,6 @@
             </section>
         </nav>
         <section class="main"></section>
-
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script> 
 	</body>

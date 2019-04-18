@@ -683,6 +683,71 @@ span.checkbox::after {
 }
 
 /* Sections */
+.popup-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.popup-wrapper .popup-login {
+  width: 40%;
+  background-color: #fff;
+  min-width: 510px;
+}
+
+.popup-wrapper .login-form {
+  padding: 50px 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.popup-wrapper .login-form .wrapper {
+  margin: 0;
+  width: 35%;
+  position: relative;
+}
+
+.popup-wrapper .login-form .wrapper .ico {
+  position: absolute;
+  left: 15px;
+}
+
+.popup-wrapper .login-form .wrapper .ico:before {
+  font-family: 'Glyphter';
+  font-size: 1.3em;
+  color: #818181;
+}
+
+.popup-wrapper .login-form .wrapper .login:before {
+  content: '\004d';
+}
+
+.popup-wrapper .login-form .wrapper .pass:before {
+  content: '\0051';
+}
+
+.popup-wrapper .login-form input {
+  width: 100%;
+  padding: 15px;
+  padding-left: 43px;
+  cursor: pointer;
+}
+
+.popup-wrapper .login-form .btn {
+  width: 20%;
+  margin-right: 5px;
+}
+
 /*COMPONENTS*/
 .page-header {
   border-bottom: 1px solid #e3e3e3;
