@@ -480,16 +480,40 @@ template {
   overflow: hidden;
 }
 
+.menu-top .pocket:before {
+  content: '\0062';
+  font-family: 'Glyphter';
+  margin-right: 10px;
+}
+
+.menu-top .pocket:after {
+  content: '\0042';
+  font-family: 'Glyphter';
+  margin-left: 10px;
+}
+
 .menu-top > li {
   list-style: none;
-  padding: 30px;
-  cursor: pointer;
   border-left: 1px solid #e3e3e3;
+  position: relative;
+}
+
+.menu-top > li .new-notification-ico {
+  width: 8px;
+  height: 8px;
+  background-color: #f58220;
+  border-radius: 50%;
+  position: absolute;
+  top: 26px;
+  left: 34px;
 }
 
 .menu-top > li a {
   text-decoration: none;
   color: #818181;
+  padding: 30px 20px;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .menu-top > li a::before {

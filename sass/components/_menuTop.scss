@@ -5,17 +5,43 @@
     align-items: center;
     overflow: hidden;
 
-    >li {
-        list-style: none;
-        padding: 30px;
-        cursor: pointer;
-        border-left: 1px solid $line-color;
-        &:hover {
-                      
+    .pocket {
+        &:before {
+            content: '\0062';
+            font-family: 'Glyphter';
+            margin-right: 10px;
         }
+        &:after {
+            content: '\0042';
+            font-family: 'Glyphter'; 
+            margin-left: 10px;
+        } 
+    }
+
+    >li {
+        list-style: none;       
+        border-left: 1px solid $line-color;
+        position: relative;
+
+          .new-notification-ico {
+                width: 8px;
+                height: 8px;
+                background-color: $button-color;
+                border-radius: 50%;
+                position: absolute;
+                top: 26px;
+                left: 34px;
+            }
+
+            
+    
+
         a {
             text-decoration: none;
-            color: $font-color;  
+            color: $font-color;
+            padding: 30px 20px;  
+            
+            display: flex;
             &::before {
                 padding: 0 5px;
             }
