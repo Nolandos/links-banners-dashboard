@@ -37,6 +37,10 @@ img {
     width: 100%;
 }
 
+.error-input {
+    border: 1px solid $error-color;
+}
+
 .wrapper {                     
     display: flex;
     justify-content: space-around;

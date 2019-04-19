@@ -42,23 +42,34 @@ function toggleMenu(visible) {
   });
 
   /*FUNCTION FOR SEND MESSAGE*/
+  
 
   document.querySelector('.send-button').addEventListener('click', (e) => {
     e.preventDefault();
-
+    
     let messageText = document.querySelector('.message-text');
     let chatContainer = document.querySelector('.chat-container');
+    let list = chatContainer.getElementsByClassName('mess');      
+     
+    if(messageText.value === '') {
+      messageText.classList.add('error-input');
+    } else {
 
-    chatContainer.innerHTML += `
-    <div class="wrapper-message">
-        <div class="message-each">
-            <p class="text">${messageText.value}</p>
-            <div class="element"></div> 
-      </div>                   
-    </div>    
-    `;
+      messageText.classList.remove('error-input');
 
-    messageText.value = '';
+        chatContainer.innerHTML += `
+          <div class="wrapper-message mess">
+            <div class="message-each">
+              <p class="text">${messageText.value}</p>
+              <div class="element"></div> 
+            </div>                   
+          </div>    
+        `;
+
+        chatContainer.scrollBy(0, list.length * 50);
+
+        messageText.value = '';
+    }
 
   });
   

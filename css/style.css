@@ -2076,6 +2076,10 @@ img {
   width: 100%;
 }
 
+.error-input {
+  border: 1px solid #ff0000;
+}
+
 .wrapper {
   display: -ms-flexbox;
   display: flex;
