@@ -57,6 +57,9 @@ function toggleMenu(visible) {
       </div>                   
     </div>    
     `;
+
+    messageText.value = '';
+
   });
   
   

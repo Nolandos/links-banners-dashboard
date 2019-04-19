@@ -690,7 +690,8 @@ span.checkbox::after {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 9;
-  display: none;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
@@ -825,6 +826,7 @@ span.checkbox::after {
   height: 400px;
   margin-bottom: 15px;
   border-bottom: 1px solid #e3e3e3;
+  overflow: auto;
 }
 
 .popup-wrapper-chat-manager .chat-container .message-other {
