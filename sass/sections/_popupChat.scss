@@ -4,7 +4,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 9;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 
@@ -18,11 +18,11 @@
             align-items: center;
             position: relative;
 
-            .close-ico {
+            .close-chat-ico {
                 position: absolute;
                 right: 15px;
                 cursor: pointer;
-                
+
                 &:before {
                     content: '\0049';
                     color: $font-color;

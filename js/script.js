@@ -26,7 +26,38 @@ function toggleMenu(visible) {
     popupWrapper.style.display = "flex";      
   });
 
-  
+  /*FUNCTION FOR ACTIVE MESSAGE POPUP*/
+  document.querySelector('.person-name').addEventListener('click', (e) => {
+    let popupWrapperChat = document.querySelector('.popup-wrapper-chat-manager');
+
+    popupWrapperChat.style.display = "flex"; 
+  });
+
+  /*FUNCTION FOR CLOSE MESSAGE POPUP*/
+
+  document.querySelector('.close-chat-ico').addEventListener('click', (e) => {
+    let popupWrapperChat = document.querySelector('.popup-wrapper-chat-manager');
+
+    popupWrapperChat.style.display = "none"; 
+  });
+
+  /*FUNCTION FOR SEND MESSAGE*/
+
+  document.querySelector('.send-button').addEventListener('click', (e) => {
+    e.preventDefault();
+
+    let messageText = document.querySelector('.message-text');
+    let chatContainer = document.querySelector('.chat-container');
+
+    chatContainer.innerHTML += `
+    <div class="wrapper-message">
+        <div class="message-each">
+            <p class="text">${messageText.value}</p>
+            <div class="element"></div> 
+      </div>                   
+    </div>    
+    `;
+  });
   
   
 

@@ -754,8 +754,7 @@ span.checkbox::after {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 9;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
@@ -776,13 +775,13 @@ span.checkbox::after {
   position: relative;
 }
 
-.popup-wrapper-chat-manager .chat-manager .page-header .close-ico {
+.popup-wrapper-chat-manager .chat-manager .page-header .close-chat-ico {
   position: absolute;
   right: 15px;
   cursor: pointer;
 }
 
-.popup-wrapper-chat-manager .chat-manager .page-header .close-ico:before {
+.popup-wrapper-chat-manager .chat-manager .page-header .close-chat-ico:before {
   content: '\0049';
   color: #818181;
   font-family: 'Glyphter';
@@ -1714,6 +1713,7 @@ label {
   color: #56819f;
   padding-left: 10px;
   font-size: 1em;
+  cursor: pointer;
 }
 
 .manager-field .person-name:hover {
