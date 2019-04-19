@@ -684,7 +684,71 @@ span.checkbox::after {
 }
 
 /* Sections */
-.popup-wrapper {
+.popup-wrapper-login {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9;
+  display: none;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.popup-wrapper-login .popup-login {
+  width: 40%;
+  background-color: #fff;
+  min-width: 510px;
+}
+
+.popup-wrapper-login .login-form {
+  padding: 50px 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.popup-wrapper-login .login-form .wrapper {
+  margin: 0;
+  width: 35%;
+  position: relative;
+}
+
+.popup-wrapper-login .login-form .wrapper .ico {
+  position: absolute;
+  left: 15px;
+}
+
+.popup-wrapper-login .login-form .wrapper .ico:before {
+  font-family: 'Glyphter';
+  font-size: 1.3em;
+  color: #818181;
+}
+
+.popup-wrapper-login .login-form .wrapper .login:before {
+  content: '\004d';
+}
+
+.popup-wrapper-login .login-form .wrapper .pass:before {
+  content: '\0051';
+}
+
+.popup-wrapper-login .login-form input {
+  width: 100%;
+  padding: 15px;
+  padding-left: 43px;
+  cursor: pointer;
+}
+
+.popup-wrapper-login .login-form .btn {
+  width: 20%;
+  margin-right: 5px;
+}
+
+.popup-wrapper-chat-manager {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -698,55 +762,172 @@ span.checkbox::after {
       align-items: center;
 }
 
-.popup-wrapper .popup-login {
-  width: 40%;
+.popup-wrapper-chat-manager .chat-manager {
+  width: 70%;
   background-color: #fff;
   min-width: 510px;
 }
 
-.popup-wrapper .login-form {
-  padding: 50px 20px;
+.popup-wrapper-chat-manager .chat-manager .page-header {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.popup-wrapper .login-form .wrapper {
-  margin: 0;
-  width: 35%;
+  -ms-flex-align: center;
+      align-items: center;
   position: relative;
 }
 
-.popup-wrapper .login-form .wrapper .ico {
+.popup-wrapper-chat-manager .chat-manager .page-header .close-ico {
   position: absolute;
-  left: 15px;
-}
-
-.popup-wrapper .login-form .wrapper .ico:before {
-  font-family: 'Glyphter';
-  font-size: 1.3em;
-  color: #818181;
-}
-
-.popup-wrapper .login-form .wrapper .login:before {
-  content: '\004d';
-}
-
-.popup-wrapper .login-form .wrapper .pass:before {
-  content: '\0051';
-}
-
-.popup-wrapper .login-form input {
-  width: 100%;
-  padding: 15px;
-  padding-left: 43px;
+  right: 15px;
   cursor: pointer;
 }
 
-.popup-wrapper .login-form .btn {
-  width: 20%;
+.popup-wrapper-chat-manager .chat-manager .page-header .close-ico:before {
+  content: '\0049';
+  color: #818181;
+  font-family: 'Glyphter';
+}
+
+.popup-wrapper-chat-manager .chat-manager .manager-field {
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.popup-wrapper-chat-manager .chat-manager .manager-field .manager-ico {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.popup-wrapper-chat-manager .chat-manager .manager-field .manager-info {
+  margin-left: 12px;
+}
+
+.popup-wrapper-chat-manager .chat-manager .manager-field .manager-info .manager-name {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.popup-wrapper-chat-manager .chat-manager .manager-field .manager-info .status-info {
+  background-color: #04AE00;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  padding: 4px 5px 2px 5px;
+  font-size: 0.8em;
+}
+
+.popup-wrapper-chat-manager .chat-container {
+  padding: 0 20px;
+  height: 400px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.popup-wrapper-chat-manager .chat-container .message-other {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.popup-wrapper-chat-manager .chat-container .message-other .text {
+  background-color: #f3f3f1;
+  padding: 15px 20px;
+  font-size: 1em;
+  max-width: 50%;
+  border-radius: 3px;
+}
+
+.popup-wrapper-chat-manager .chat-container .message-other .element {
+  background-color: #f3f3f1;
+  width: 12px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: -5px;
+  transform: skewY(40deg);
+}
+
+.popup-wrapper-chat-manager .chat-container .wrapper-message {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.popup-wrapper-chat-manager .chat-container .wrapper-message .message-each {
+  max-width: 50%;
+  position: relative;
+}
+
+.popup-wrapper-chat-manager .chat-container .wrapper-message .message-each .text {
+  background-color: #b9b9b9;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 1em;
+  margin: 0;
+  border-radius: 3px;
+}
+
+.popup-wrapper-chat-manager .chat-container .wrapper-message .message-each .element {
+  background-color: #b9b9b9;
+  width: 12px;
+  height: 15px;
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  transform: skewY(40deg);
+}
+
+.popup-wrapper-chat-manager .send-message {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.popup-wrapper-chat-manager .send-message .message-input-wrapper {
+  width: 85%;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   margin-right: 5px;
+  margin-left: 15px;
+}
+
+.popup-wrapper-chat-manager .send-message .message-input-wrapper .message-text {
+  width: 100%;
+  padding: 10px 50px;
+}
+
+.popup-wrapper-chat-manager .send-message .message-input-wrapper .cloud-ico {
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.popup-wrapper-chat-manager .send-message .message-input-wrapper .cloud-ico:before {
+  content: '\004e';
+  font-family: 'Glyphter';
+  color: #e3e3e3;
+  font-size: 1.3em;
+  padding-left: 15px;
+}
+
+.popup-wrapper-chat-manager .send-button {
+  margin-right: 15px;
 }
 
 /*COMPONENTS*/

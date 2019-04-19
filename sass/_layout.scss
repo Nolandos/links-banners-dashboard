@@ -1,9 +1,9 @@
-@import "variables";                               
-@import "mixins";
+@import "variables";                                          
+@import "mixins";           
 @import "normalize";                    
-@import "colorBox";     
+@import "colorBox";                        
                                                                                                               
-/* Components */                                                               
+/* Components */                                                                    
                                                                  
 @import "components/menuSideBar";
 @import "components/rangeBar";   
@@ -15,19 +15,20 @@
 @import "components/checkboxes";
  
 /* Sections */      
-@import "sections/popupLogin";     
+@import "sections/popupLogin";
+@import "sections/popupChat";      
 @import "sections/postback"; 
 @import "sections/links"; 
 @import "sections/personalData"; 
 @import "sections/payout";
-@import "sections/generalStatistic"; 
+@import "sections/generalStatistic";              
 @import "sections/managersTable";   
 @import "sections/details";
 @import "sections/banners";
 @import "sections/generalLinks";                                                       
 
-/* Pages / Views */
-    
+/* Pages / Views */             
+     
 body {
     font-family: $brand-font;
 }
@@ -36,12 +37,12 @@ img {
     width: 100%;
 }
 
-.wrapper {
+.wrapper {                     
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
+ 
 .sidebar {   
     width: 190px;
     height: 100%;    
@@ -51,10 +52,10 @@ img {
     z-index: 2;
     transform: translate3d(-100%, 0, 0);
     -webkit-transition: -webkit-transform 0.5s;
-    transition: transform 0.5s;
-} 
-
-.top-bar {            
+    transition: transform 0.5s;  
+}   
+ 
+.top-bar {              
     height: 70px;
     width: 100vw; 
     min-width: 590px; 

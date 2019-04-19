@@ -10,20 +10,25 @@ function toggleMenu(visible) {
     toggleMenu()
   });
 
-  /*FUNCTION FOR LOGIN POPUP*/
+  /*FUNCTIONS FOR LOGIN POPUP*/
 
   document.querySelector('.log-in').addEventListener('click', (e) => {
     e.preventDefault();
-    let popupWrapper = document.querySelector('.popup-wrapper');
+    let popupWrapper = document.querySelector('.popup-wrapper-login');
 
     popupWrapper.style.display = "none";
   });
 
+  /*FUNCTION ACTIVE POPUP LOGIN*/ 
   document.querySelector('.exit').addEventListener('click', (e) => {
-    let popupWrapper = document.querySelector('.popup-wrapper');
+    let popupWrapper = document.querySelector('.popup-wrapper-login');
     
     popupWrapper.style.display = "flex";      
-  });  
+  });
+
+  
+  
+  
 
   $(document).ready(function() { 
     //Strona ladowana jako pierwsza:
