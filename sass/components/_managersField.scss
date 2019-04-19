@@ -7,6 +7,9 @@
         color: $person-name-color;
         padding-left: 10px;
         font-size: 1em;
+        &:hover {
+            color: $button-color;    
+        }
     }
 
     .wrapper {

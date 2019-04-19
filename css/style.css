@@ -1535,6 +1535,10 @@ label {
   font-size: 1em;
 }
 
+.manager-field .person-name:hover {
+  color: #f58220;
+}
+
 .manager-field .wrapper {
   position: relative;
 }
