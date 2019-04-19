@@ -42,8 +42,6 @@ function toggleMenu(visible) {
   });
 
   /*FUNCTION FOR SEND MESSAGE*/
-  
-
   document.querySelector('.send-button').addEventListener('click', (e) => {
     e.preventDefault();
     
@@ -72,9 +70,8 @@ function toggleMenu(visible) {
     }
 
   });
-  
-  
 
+  /*-------*/
   $(document).ready(function() { 
     //Strona ladowana jako pierwsza:
     $('.main').load('pages/general.html');
