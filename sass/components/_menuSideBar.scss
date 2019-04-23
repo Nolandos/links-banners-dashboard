@@ -1,8 +1,10 @@
 .menu-side-bar {
     padding-left: 0;
+    margin-top: 0;
     >li {
         padding: 0 15px;
         background-color: $sidebar-color;
+        border-left: 5px solid transparent; 
         cursor: pointer;
         &:hover {
             background-color: $sidebar-hover-color;

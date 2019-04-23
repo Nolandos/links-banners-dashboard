@@ -2,7 +2,7 @@
 @import "mixins";                    
 @import "normalize";                    
 @import "colorBox";                                   
-                                                                                                                                                
+                                                                                                                                                  
 /* Components */                                                                    
                                                                  
 @import "components/menuSideBar";
@@ -38,7 +38,7 @@ body {
 img {
     width: 100%;
 }
-
+ 
 .error-input {
     border: 1px solid $error-color;
 }      
