@@ -4,6 +4,10 @@
     border: none;
     color: $white-color;
     cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center; 
+
     &:hover {
         background-color: $button-hover-color;
     }
@@ -22,4 +26,12 @@
 
 .btn-rectangle {
     padding: 13px 30px;
+}
+
+.btn-other {
+    background-color: $font-color;
+    &:disabled {
+        background-color: $line-color;
+        cursor: not-allowed;
+    }
 }

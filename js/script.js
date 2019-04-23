@@ -71,6 +71,82 @@ function toggleMenu(visible) {
 
   });
 
+  /*FUNCTION FOR CLOSE ADD BANNERS POPUP*/
+
+  document.querySelector('.close-add-banners-ico').addEventListener('click', (e) => {
+    let popupWrapperBanners = document.querySelector('.popup-add-banners-wrapper');
+
+    popupWrapperBanners.style.display = "none";
+
+  });
+
+  /*FUNCTIONS FOR ADD BANNERS SCROLLS*/
+  document.getElementById('scrol-bar-y-2').addEventListener('input', (e) => {
+    let containerToScroll = document.querySelector('#select-banners');
+    let scroll = document.getElementById('scrol-bar-y-2');
+   
+    scrollBar(containerToScroll, scroll);
+  
+  });
+
+  document.getElementById('scrol-bar-y-3').addEventListener('input', (e) => {
+    let containerToScroll = document.querySelector('#select-websites');
+    let scroll = document.getElementById('scrol-bar-y-3');
+   
+    scrollBar(containerToScroll, scroll);
+  
+  });
+
+  /*FUNCTIONS FOR ACTIVE COPY BUTTON*/
+
+  document.querySelector('#generated-link').addEventListener('input', (e) => {
+    let copyBtn = document.querySelector('#copy-btn');
+
+    copyBtn.removeAttribute('disabled');
+
+    if(document.querySelector('#generated-link').value === '') {
+      copyBtn.disabled = true;
+    }
+
+  });
+
+  document.querySelector('#copy-btn').addEventListener('click', (e) => {
+    let input = document.querySelector('#generated-link');
+    input.select();
+
+    document.execCommand('copy');
+    
+    alert('Skopiowano link !');
+  });
+
+
+document.querySelector('#language-select').addEventListener('click', (e) => {
+  let languageList = document.querySelector('#language-list');
+  
+  if(languageList.style.display === "block") {
+    languageList.style.display = "none";
+  } else {
+    languageList.style.display = "block";
+  }
+});
+
+document.querySelector('#language-list').addEventListener('click', (e) => {
+  let currentChoice = document.querySelector('#language-select');
+  let languageList = document.querySelector('#language-list');
+
+  if(e.target.classList.contains('choice')) {
+    currentChoice.innerHTML = e.target.innerHTML;
+    languageList.style.display = "none";     
+  }
+  
+  if(e.target.classList.contains('flag-ico')) {
+    currentChoice.innerHTML = e.target.parentElement.innerHTML;
+    languageList.style.display = "none";
+  }
+   
+});
+
+
   /*-------*/
   $(document).ready(function() { 
     //Strona ladowana jako pierwsza:
@@ -98,8 +174,9 @@ function toggleMenu(visible) {
   labelRangBar.innerHTML = Math.round(rangeBar.value / 0.59523) + " hours";
 }
 
-  
-function scrollBar() {
-  let checkboxes = document.querySelector('.checkboxes'); 
-  checkboxes.scrollTo(0, document.querySelector('.scrol-bar-y').value * 2.5);
+function scrollBar(container, scroll) {
+  container.scrollTo(0, scroll.value * 2.5);
 }
+
+
+
