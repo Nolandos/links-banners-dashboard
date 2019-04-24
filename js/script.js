@@ -1,3 +1,56 @@
+/*FUNCTION LOAD FIRST PAGE*/
+
+var request = new XMLHttpRequest();
+
+request.open('GET', 'pages/general.html', true);
+
+request.onload = function() {
+  if (request.status >= 200 && request.status < 400) {
+    var resp = request.responseText;
+
+    document.querySelector('.main').innerHTML = resp;
+  }
+};
+
+request.send();
+
+/*FUNCTION FOR LOAD NEXT SUBPAGE*/
+document.querySelector('#menu').addEventListener('click', (e) => {
+  e.preventDefault();
+  let subpage = e.target.getAttribute('href');
+
+  var request = new XMLHttpRequest();
+
+  request.open('GET', `pages/${subpage}`, true);
+
+  request.onload = function() {
+    if (request.status >= 200 && request.status < 400) {
+      var resp = request.responseText;
+
+      document.querySelector('.main').innerHTML = resp;
+    }
+  };
+  
+ 
+  request.send();
+});
+
+
+/*LOAD SUBPAGES IN JQUERY*/
+  
+$(document).ready(function() { 
+  //Strona ladowana jako pierwsza:
+  $('.main').load('pages/general.html');
+
+  //Ładowanie pozostalych podstron:
+  $('ul.menu-side-bar li a').click(function() {
+     var podstrona = $(this).attr('href');
+     $('.main').html('Ładuję...');
+     $('.main').load('pages/'+podstrona);
+     return false;
+  });
+});
+
 /*FUNCTION FOR TOGGLE SIDEBAR*/
 
 function toggleMenu(visible) {
@@ -109,7 +162,7 @@ function toggleMenu(visible) {
     }
 
   });
-
+/*FUNCTIONS FOR COPY LINK*/
   document.querySelector('#copy-btn').addEventListener('click', (e) => {
     let input = document.querySelector('#generated-link');
     input.select();
@@ -119,6 +172,7 @@ function toggleMenu(visible) {
     alert('Skopiowano link !');
   });
 
+/*FUNCTIONS FOR SELECT LANGUAGE COMPONENT */
 
 document.querySelector('#language-select').addEventListener('click', (e) => {
   let languageList = document.querySelector('#language-list');
@@ -147,20 +201,7 @@ document.querySelector('#language-list').addEventListener('click', (e) => {
 });
 
 
-  /*-------*/
-  $(document).ready(function() { 
-    //Strona ladowana jako pierwsza:
-    $('.main').load('pages/general.html');
-  
-    //Ladowanie pozostalych podstron:
-    $('ul.menu-side-bar li a').click(function() {
-       var podstrona = $(this).attr('href');
-       $('.main').html('Ładuję...');
-       $('.main').load('pages/'+podstrona);
-       return false;
-    });
- });
-
+/*FUNCTIONS*/
 
  function progress() {
   let currentProgress = document.querySelector('.current-progress');
@@ -177,6 +218,4 @@ document.querySelector('#language-list').addEventListener('click', (e) => {
 function scrollBar(container, scroll) {
   container.scrollTo(0, scroll.value * 2.5);
 }
-
-
 

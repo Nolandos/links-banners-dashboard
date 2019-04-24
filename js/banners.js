@@ -1,3 +1,4 @@
+/*FUNCTION ACIVATE ADD BANNERS SECTIONS (POPUP) */
 document.querySelector('.banners').addEventListener('click', (e) => {
     
     if(e.target.classList.contains('add-banners-btn')) {
