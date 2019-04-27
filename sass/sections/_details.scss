@@ -7,20 +7,144 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow-x: auto;
 
         .table {
             font-size: 0.9em;
 
-            tr {
+            tr {                
                 >th {
+                  width: auto;
+
+                  &:first-child {
+                    display: none;
+                  }
                     > a {
                         padding: 5px 10px;
                     }
                 }
-                >th {
-                    width: auto;
+               
+                >td {
+                  &:first-child {
+                    display: none;
+                  }
                 }
+
             }
         }
     }
 }
+
+@media (max-width: 992px) {
+.details {
+
+.container {
+
+  .table {
+
+    thead {
+      display: none;
+    }
+
+    tbody tr td {
+      display: block;
+      width: 100%;
+      
+
+      &:last-child {
+        border-bottom: 1px solid #000;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+      }
+
+      &:first-child {
+        display: flex;
+        justify-content: center;
+        font-size: 1.2em;
+        background-color: $button-color;
+        border-bottom: none;
+        color: #000;
+        font-weight: bold;
+
+        &::before {
+          content: "Pozycja:";
+          font-weight: bold;
+          margin-right: 10px;
+          color: #fff;
+        }
+      } 
+
+      &:nth-child(2) {
+        
+        &::before {
+          content: "Tracker name: ";
+          font-weight: bold;
+        }
+      }
+      &:nth-child(3) {
+        &::before {
+          content: "Initiated date: ";
+          font-weight: bold;
+        }
+      }
+      &:nth-child(4) {
+        &::before {
+          content: "Visits: ";
+          font-weight: bold;
+        }
+      }
+      &:nth-child(5) {
+        &::before {
+          content: "Unique: ";
+          font-weight: bold;
+        }
+      }
+      &:nth-child(6) {
+        &::before {
+          content: "Signups: ";
+          font-weight: bold;
+        }
+      }
+      &:nth-child(7) {
+        &::before {
+          content: "FTD: ";
+          font-weight: bold;
+        }
+      }
+      &:nth-child(8) {
+        &::before {
+          content: "Depositors: ";
+          font-weight: bold;
+        }
+      }
+      &:nth-child(9) {
+        &::before {
+          content: "Deposist ($): ";
+          font-weight: bold;
+        }
+      }
+      &:nth-child(10) {
+        &::before {
+          content: "Payout ($): ";
+          font-weight: bold;
+        }
+      }
+      &:nth-child(11) {
+        &::before {
+          content: "Turnover: ";
+          font-weight: bold;
+        }
+      }
+      &:nth-child(12) {
+        &::before {
+          content: "Deal: ";
+          font-weight: bold;
+        }
+      }
+
+    }
+  }
+} 
+}
+}
+

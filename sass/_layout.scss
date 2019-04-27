@@ -1,9 +1,9 @@
 @import "variables";                                                                                                       
 @import "mixins";                    
 @import "normalize";                    
-@import "colorBox";                                   
+@import "colorBox";                                     
                                                                                                                                                   
-/* Components */                                                                    
+/* Components */                                                                     
                                                                  
 @import "components/menuSideBar";
 @import "components/rangeBar";                  
@@ -23,16 +23,16 @@
 @import "sections/links"; 
 @import "sections/personalData"; 
 @import "sections/payout";
-@import "sections/generalStatistic";              
+@import "sections/generalStatistic";                 
 @import "sections/managersTable";   
 @import "sections/details";
 @import "sections/banners";
 @import "sections/generalLinks";                                                       
       
-/* Pages / Views */                
+/* Pages / Views */                                 
      
 body {
-    font-family: $brand-font;
+    font-family: $brand-font;            
 } 
          
 img {
@@ -60,20 +60,20 @@ img {
     -webkit-transition: -webkit-transform 0.5s;
     transition: transform 0.5s;  
 }   
- 
+  
 .top-bar {              
     height: 70px;
     width: 100vw; 
     min-width: 590px; 
-    border: 1px solid $line-color;                 
+    border: 1px solid $line-color;                               
     background-color: #fff;
     border-top: none;
     border-left: none;
-    position: fixed;
-    z-index: 1;    
+    position: fixed; 
+    z-index: 1;      
     display: flex;        
     justify-content: flex-end;
-} 
+}        
 
 .main {
     min-height: 100vh;                       
@@ -106,7 +106,7 @@ img {
 @media(max-width: 500px) {
     .sidebar {
         width: 100%;
-    }    
+    }     
 }
 
 

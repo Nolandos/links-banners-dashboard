@@ -1729,7 +1729,7 @@ label {
 }
 
 .table tr > th {
-  width: 25%;
+  min-width: 140px;
   text-align: left;
   color: #818181;
   border-bottom: 2px solid #e3e3e3;
@@ -1770,6 +1770,19 @@ label {
 .table tr > td {
   border-bottom: 2px solid #e3e3e3;
   padding-left: 15px;
+}
+
+.table tr > td:last-child {
+  padding-right: 15px;
+}
+
+@media (max-width: 992px) {
+  .table tbody > tr:hover {
+    background-color: transparent;
+  }
+  .table tbody > tr td {
+    padding: 10px 0;
+  }
 }
 
 .payout .container {
@@ -2102,18 +2115,103 @@ label {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
+  overflow-x: auto;
 }
 
 .details .container .table {
   font-size: 0.9em;
 }
 
+.details .container .table tr > th {
+  width: auto;
+}
+
+.details .container .table tr > th:first-child {
+  display: none;
+}
+
 .details .container .table tr > th > a {
   padding: 5px 10px;
 }
 
-.details .container .table tr > th {
-  width: auto;
+.details .container .table tr > td:first-child {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .details .container .table thead {
+    display: none;
+  }
+  .details .container .table tbody tr td {
+    display: block;
+    width: 100%;
+  }
+  .details .container .table tbody tr td:last-child {
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .details .container .table tbody tr td:first-child {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    font-size: 1.2em;
+    background-color: #f58220;
+    border-bottom: none;
+    color: #000;
+    font-weight: bold;
+  }
+  .details .container .table tbody tr td:first-child::before {
+    content: "Pozycja:";
+    font-weight: bold;
+    margin-right: 10px;
+    color: #fff;
+  }
+  .details .container .table tbody tr td:nth-child(2)::before {
+    content: "Tracker name: ";
+    font-weight: bold;
+  }
+  .details .container .table tbody tr td:nth-child(3)::before {
+    content: "Initiated date: ";
+    font-weight: bold;
+  }
+  .details .container .table tbody tr td:nth-child(4)::before {
+    content: "Visits: ";
+    font-weight: bold;
+  }
+  .details .container .table tbody tr td:nth-child(5)::before {
+    content: "Unique: ";
+    font-weight: bold;
+  }
+  .details .container .table tbody tr td:nth-child(6)::before {
+    content: "Signups: ";
+    font-weight: bold;
+  }
+  .details .container .table tbody tr td:nth-child(7)::before {
+    content: "FTD: ";
+    font-weight: bold;
+  }
+  .details .container .table tbody tr td:nth-child(8)::before {
+    content: "Depositors: ";
+    font-weight: bold;
+  }
+  .details .container .table tbody tr td:nth-child(9)::before {
+    content: "Deposist ($): ";
+    font-weight: bold;
+  }
+  .details .container .table tbody tr td:nth-child(10)::before {
+    content: "Payout ($): ";
+    font-weight: bold;
+  }
+  .details .container .table tbody tr td:nth-child(11)::before {
+    content: "Turnover: ";
+    font-weight: bold;
+  }
+  .details .container .table tbody tr td:nth-child(12)::before {
+    content: "Deal: ";
+    font-weight: bold;
+  }
 }
 
 /*EXTENDS*/

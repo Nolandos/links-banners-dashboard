@@ -13,9 +13,8 @@
 
     tr {
         height: 70px;
-
         >th {
-            width: 25%;
+            min-width: 140px;
             text-align: left;
             color: $font-color;
             border-bottom: 2px solid $line-color; 
@@ -51,8 +50,28 @@
 
         >td {
             border-bottom: 2px solid $line-color;
-            padding-left: 15px;               
+            padding-left: 15px;  
+            &:last-child {
+                padding-right: 15px;
+            }             
         }
 
     }
 }
+
+@media (max-width: 992px) { 
+    .table {
+        tbody { 
+            >tr {
+                &:hover {
+                    background-color: transparent;
+                }
+
+                td {
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+} 
+
