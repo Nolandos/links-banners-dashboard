@@ -1,6 +1,7 @@
 .input-wrapper-lang {
     
     .language-select {
+        user-select: none;
         border: 1px solid $line-color;
         padding: 0 10px;
         border-radius: 3px;
@@ -23,7 +24,7 @@
     }
 
     .language-list-wrapper {
-        
+        user-select: none;
         position: relative;
         .language-list {
             position: absolute;

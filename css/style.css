@@ -700,6 +700,10 @@ span.checkbox::after {
 }
 
 .input-wrapper-lang .language-select {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   border: 1px solid #e3e3e3;
   padding: 0 10px;
   border-radius: 3px;
@@ -724,6 +728,10 @@ span.checkbox::after {
 }
 
 .input-wrapper-lang .language-list-wrapper {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   position: relative;
 }
 

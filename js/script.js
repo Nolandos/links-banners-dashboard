@@ -205,25 +205,25 @@ document.querySelector('#language-list').addEventListener('click', (e) => {
     //FOR ADD BANNERS
 document.querySelector('.popup-add-banners-wrapper').addEventListener('click', (e) => {
   
-  document.querySelector('.add-banners').addEventListener('click', (e) => {
-    e.stopPropagation();
-  });
-  
   let popupWrapperBanners = document.querySelector('.popup-add-banners-wrapper');
   
   popupWrapperBanners.style.display = "none";  
 });
 
-    //FOR CHAT MANAGER
-document.querySelector('.popup-wrapper-chat-manager').addEventListener('click', (e) => {
-  
-  document.querySelector('.chat-manager').addEventListener('click', (e) => {
-    e.stopPropagation();
-  });
+document.querySelector('.add-banners').addEventListener('click', (e) => {
+  e.stopPropagation();
+});
+
+    //FOR CHAT 
+document.querySelector('.popup-wrapper-chat-manager').addEventListener('click', (e) => {  
   
   let popupWrapperChat = document.querySelector('.popup-wrapper-chat-manager');
   
-  popupWrapperChat.style.display = "none";  
+  popupWrapperChat.style.display = "none"; 
+});
+
+document.querySelector('.chat-manager').addEventListener('click', (e) => {
+  e.stopPropagation();
 });
 
 
