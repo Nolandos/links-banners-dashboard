@@ -161,6 +161,7 @@ function toggleMenu(visible) {
     }
 
   });
+
 /*FUNCTIONS FOR COPY LINK*/
   document.querySelector('#copy-btn').addEventListener('click', (e) => {
     let input = document.querySelector('#generated-link');
@@ -197,6 +198,32 @@ document.querySelector('#language-list').addEventListener('click', (e) => {
     languageList.style.display = "none";
   }
    
+});
+
+/*FUNCTIONS OFF POPUP WRRAPPER */
+
+    //FOR ADD BANNERS
+document.querySelector('.popup-add-banners-wrapper').addEventListener('click', (e) => {
+  
+  document.querySelector('.add-banners').addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+  
+  let popupWrapperBanners = document.querySelector('.popup-add-banners-wrapper');
+  
+  popupWrapperBanners.style.display = "none";  
+});
+
+    //FOR CHAT MANAGER
+document.querySelector('.popup-wrapper-chat-manager').addEventListener('click', (e) => {
+  
+  document.querySelector('.chat-manager').addEventListener('click', (e) => {
+    e.stopPropagation();
+  });
+  
+  let popupWrapperChat = document.querySelector('.popup-wrapper-chat-manager');
+  
+  popupWrapperChat.style.display = "none";  
 });
 
 
