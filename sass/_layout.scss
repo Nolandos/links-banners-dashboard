@@ -41,7 +41,11 @@ img {
  
 .error-input {
     border: 1px solid $error-color;
-}      
+}
+
+.delete {
+    cursor: pointer;
+}
 
 .wrapper {                     
     display: flex;
@@ -84,7 +88,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    -webkit-transition: -webkit-transform 0.5s;
+    -webkit-transition: -webkit-transform 0.5s;          
     transition: margin-left 0.5s;
 }
 

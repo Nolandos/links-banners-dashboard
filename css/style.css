@@ -1917,10 +1917,11 @@ label {
 }
 
 .options-group {
+  margin-top: 50px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .options-group .option {
@@ -1932,6 +1933,7 @@ label {
   -ms-flex-pack: justify;
       justify-content: space-between;
   padding: 0 25px;
+  margin: 0 30px;
   color: #56819f;
   cursor: pointer;
 }
@@ -1986,6 +1988,16 @@ label {
   .earnings-chart {
     width: 90%;
   }
+}
+
+.general-statistic .chart {
+  margin-top: 50px;
+}
+
+.general-statistic .earnings-chart .title {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #818181;
 }
 
 .manager-field {
@@ -2449,6 +2461,10 @@ img {
 
 .error-input {
   border: 1px solid #ff0000;
+}
+
+.delete {
+  cursor: pointer;
 }
 
 .wrapper {

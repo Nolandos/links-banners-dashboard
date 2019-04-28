@@ -8,6 +8,12 @@ request.onload = function() {
   if (request.status >= 200 && request.status < 400) {
     var resp = request.responseText;
 
+      
+      let newElem = document.createElement('script');
+      newElem.src = `js/general.js`;
+      newElem.id = `current-script`;
+      document.body.appendChild(newElem);
+
     document.querySelector('.main').innerHTML = resp;
   }
 };
@@ -22,33 +28,26 @@ document.querySelector('#menu').addEventListener('click', (e) => {
   var request = new XMLHttpRequest();
 
   request.open('GET', `pages/${subpage}`, true);
-
+  
   request.onload = function() {
     if (request.status >= 200 && request.status < 400) {
       var resp = request.responseText;
+      let currentScript = document.querySelector('#current-script');
+                           
 
+      var newElem = document.createElement('script');
+      newElem.src = `js/${subpage.replace('.html', '')}.js`;
+      newElem.id = `current-script`;
+
+     if (checkFile(newElem.src) === true) {
+        currentScript.remove();
+        document.body.appendChild(newElem);
+     }      
       document.querySelector('.main').innerHTML = resp;
     }
   };
   
- 
   request.send();
-});
-
-
-/*LOAD SUBPAGES IN JQUERY*/
-  
-$(document).ready(function() { 
-  //Strona ladowana jako pierwsza:
-  $('.main').load('pages/general.html');
-
-  //Ładowanie pozostalych podstron:
-  $('ul.menu-side-bar li a').click(function() {
-     var podstrona = $(this).attr('href');
-     $('.main').html('Ładuję...');
-     $('.main').load('pages/'+podstrona);
-     return false;
-  });
 });
 
 /*FUNCTION FOR TOGGLE SIDEBAR*/
@@ -215,7 +214,28 @@ document.querySelector('#language-list').addEventListener('click', (e) => {
   labelRangBar.innerHTML = Math.round(rangeBar.value / 0.59523) + " hours";
 }
 
+function removeRecord(target) {
+  if(target.classList.contains('delete')) {
+    target.parentElement.parentElement.remove();
+  }
+}
+
 function scrollBar(container, scroll) {
   container.scrollTo(0, scroll.value * 2.5);
 }
 
+function checkFile(arg) {
+  let result;
+  let request = new XMLHttpRequest();
+
+  request.open('GET', arg , false);
+  request.onload = function() {
+    if (request.status >= 200 && request.status < 400) {
+        result = true;                  
+    } else {
+      result = false;
+    }
+  }
+  request.send();
+  return result;
+}

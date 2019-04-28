@@ -9,4 +9,17 @@
 
 .general-statistic {
     @extend .article;
+
+    .chart {
+        margin-top: 50px;
+    }
+
+    .earnings-chart {
+
+        .title {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: $font-color;
+        }
+    }
 }
