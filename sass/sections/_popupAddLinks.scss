@@ -10,6 +10,7 @@
 
     .add-links {
         width: 80%;
+        max-width: 1150px;
         max-height: 810px;
         overflow: auto;
         background-color: #fff;
@@ -114,7 +115,7 @@
                 .scroll-links {
                     width: 355px;
                     top: 395px;
-                    right: -120px;
+                    right: -150px;
                 }
 
                 .checkboxes {
@@ -142,4 +143,54 @@
         }
     }
 
+}
+
+@media(max-width: 1200px) {
+    .popup-add-links {
+        .add-links {
+            width: 100%;
+            max-width: none;
+        }
+    }
+}
+
+@media(max-width: 767px) { 
+    .popup-add-links {
+        .add-links {
+            height: 100%;
+
+            .add-links-form {
+                .inputs-container {
+                    flex-direction: column;
+                    align-items: center;
+
+                    button {
+                        margin-top: 15px;
+                    }
+
+                    .input-wrapper,
+                    .input-wrapper-lang {
+                        flex: none;
+                    }
+
+                    .input-wrapper {
+                        width: 70%;
+                    }
+
+                    .input-wrapper-lang {
+                        width: 120px;
+                    }
+                }
+
+                .checkbox-links {
+                    flex-direction: column;
+                    
+                    .scroll-links {
+                        top: 610px;    
+                    }
+                }  
+
+            }
+        }
+    }
 }

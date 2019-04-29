@@ -346,7 +346,7 @@ function removeRecord(target) {
 }
 
 function scrollBar(container, scroll) {
-  container.scrollTo(0, scroll.value * 2.5);
+  container.scrollTo(0, scroll.value * 3.5);
 }
 
 function checkFile(arg) {

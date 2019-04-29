@@ -594,7 +594,7 @@ template {
 
 .user-options {
   display: none;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
 
 .user-options .title {
@@ -745,6 +745,7 @@ span.checkbox::after {
   background-repeat: no-repeat;
   background-position: 95%;
   background-size: 15px;
+  min-width: 90px;
 }
 
 .input-wrapper-lang .language-select .flag-ico {
@@ -809,6 +810,7 @@ span.checkbox::after {
 
 .popup-add-links .add-links {
   width: 80%;
+  max-width: 1150px;
   max-height: 810px;
   overflow: auto;
   background-color: #fff;
@@ -936,7 +938,7 @@ span.checkbox::after {
 .popup-add-links .add-links .add-links-form .checkbox-links .scroll-links {
   width: 355px;
   top: 395px;
-  right: -120px;
+  right: -150px;
 }
 
 .popup-add-links .add-links .add-links-form .checkbox-links .checkboxes {
@@ -959,6 +961,46 @@ span.checkbox::after {
   content: '\004c';
   font-family: 'Glyphter';
   margin-right: 15px;
+}
+
+@media (max-width: 1200px) {
+  .popup-add-links .add-links {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .popup-add-links .add-links {
+    height: 100%;
+  }
+  .popup-add-links .add-links .add-links-form .inputs-container {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .popup-add-links .add-links .add-links-form .inputs-container button {
+    margin-top: 15px;
+  }
+  .popup-add-links .add-links .add-links-form .inputs-container .input-wrapper,
+  .popup-add-links .add-links .add-links-form .inputs-container .input-wrapper-lang {
+    -ms-flex: none;
+        flex: none;
+  }
+  .popup-add-links .add-links .add-links-form .inputs-container .input-wrapper {
+    width: 70%;
+  }
+  .popup-add-links .add-links .add-links-form .inputs-container .input-wrapper-lang {
+    width: 120px;
+  }
+  .popup-add-links .add-links .add-links-form .checkbox-links {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .popup-add-links .add-links .add-links-form .checkbox-links .scroll-links {
+    top: 610px;
+  }
 }
 
 .quit-popup {
