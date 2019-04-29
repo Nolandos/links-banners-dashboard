@@ -71,13 +71,20 @@ function toggleMenu(visible) {
     popupWrapper.style.display = "none";
   });
 
-  /*FUNCTION ACTIVE POPUP LOGIN*/ 
+  /*FUNCTION ACTIVE POPUP EXIT*/ 
   document.querySelector('.exit').addEventListener('click', (e) => {
-    let popupWrapper = document.querySelector('.popup-wrapper-login');
+    let popupWrapper = document.querySelector('.quit-popup');
     
     popupWrapper.style.display = "flex";      
   });
 
+  /*FUNCTION ACTIVE POPUP LOGIN*/ 
+  document.querySelector('.profile-login').addEventListener('click', (e) => {
+    let popupWrapper = document.querySelector('.popup-wrapper-login');
+    
+    popupWrapper.style.display = "flex";      
+  });
+  
   /*FUNCTION FOR ACTIVE MESSAGE POPUP*/
   document.querySelector('.person-name').addEventListener('click', (e) => {
     let popupWrapperChat = document.querySelector('.popup-wrapper-chat-manager');

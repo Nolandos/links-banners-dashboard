@@ -2,7 +2,7 @@
 @import "mixins";                    
 @import "normalize";                    
 @import "colorBox";                                     
-                                                                                                                                                  
+                                                                                                                                                                       
 /* Components */                                                                     
                                                                  
 @import "components/menuSideBar";
@@ -16,7 +16,8 @@
 @import "components/selectLanguages";    
   
 /* Sections */ 
-@import "sections/popupAddLinks";     
+@import "sections/popupAddLinks";  
+@import "sections/quitPopup";    
 @import "sections/popupLogin";
 @import "sections/popupChat"; 
 @import "sections/popupAddBanners";     

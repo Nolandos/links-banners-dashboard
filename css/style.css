@@ -482,6 +482,14 @@ template {
   overflow: hidden;
 }
 
+.menu-top .profile-login {
+  color: #56819f;
+}
+
+.menu-top .profile-login:hover {
+  color: #ffa200;
+}
+
 .menu-top .pocket:before {
   content: '\0062';
   font-family: 'Glyphter';
@@ -933,6 +941,58 @@ span.checkbox::after {
   content: '\004c';
   font-family: 'Glyphter';
   margin-right: 15px;
+}
+
+.quit-popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9;
+  display: none;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.quit-popup .quit {
+  width: 20%;
+  min-width: 350px;
+  height: 15%;
+  min-height: 170px;
+  overflow: auto;
+  background-color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.quit-popup .quit .page-header {
+  width: 100%;
+  height: 40%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.quit-popup .quit .inputs-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  height: 60%;
+  width: 100%;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.quit-popup .quit .inputs-wrapper button {
+  margin-right: 25px;
 }
 
 .popup-wrapper-login {

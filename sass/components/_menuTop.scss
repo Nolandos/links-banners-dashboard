@@ -5,6 +5,13 @@
     align-items: center;
     overflow: hidden;
 
+    .profile-login {
+        color: $person-name-color;
+        &:hover {
+            color: $button-hover-color;
+        }
+    }
+
     .pocket {
         &:before {
             content: '\0062';
