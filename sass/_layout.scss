@@ -2,7 +2,7 @@
 @import "mixins";                    
 @import "normalize";                    
 @import "colorBox";                                     
-                                                                                                                                                                       
+                                                                                                                                                                            
 /* Components */                                                                     
                                                                  
 @import "components/menuSideBar";
@@ -30,7 +30,7 @@
 @import "sections/details";
 @import "sections/banners";
 @import "sections/generalLinks";                                                       
-      
+       
 /* Pages / Views */                                 
      
 body {
@@ -56,7 +56,7 @@ img {
 }
  
 .sidebar {                                 
-    width: 190px;
+    width: 210px;       
     height: 100%;    
     background-color: $sidebar-color;
     position: fixed;

@@ -78,8 +78,21 @@ function toggleMenu(visible) {
     popupWrapper.style.display = "flex";      
   });
 
+  
+   document.querySelector('.exit-2').addEventListener('click', (e) => {
+    let popupWrapper = document.querySelector('.quit-popup');
+    
+    popupWrapper.style.display = "flex";      
+  });
+
   /*FUNCTION ACTIVE POPUP LOGIN*/ 
   document.querySelector('.profile-login').addEventListener('click', (e) => {
+    let popupWrapper = document.querySelector('.popup-wrapper-login');
+    
+    popupWrapper.style.display = "flex";      
+  });
+
+  document.querySelector('.profile-login-2').addEventListener('click', (e) => {
     let popupWrapper = document.querySelector('.popup-wrapper-login');
     
     popupWrapper.style.display = "flex";      
