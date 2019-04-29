@@ -64,5 +64,25 @@
 
 }
 
+@media(max-width: 767px) { 
+    .popup-wrapper-login {
+        .popup-login {
+            min-width: 100%;   
+            
+            .login-form {
+                flex-direction: column;
+                align-items: center;
 
+                .wrapper {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+
+                .btn {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
 

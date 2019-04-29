@@ -51,7 +51,7 @@ img {
 
 .wrapper {                     
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around;   
     align-items: center;
 }
  
@@ -91,12 +91,12 @@ img {
     flex-direction: column;
     align-items: center;
     -webkit-transition: -webkit-transform 0.5s;          
-    transition: margin-left 0.5s;
+    transition: margin-left 0.5s;   
 }
 
 @media(max-width: 767px) {
     .main {
-        margin-left: 0;
+        margin-left: 0; 
     }
  
     .top-bar {

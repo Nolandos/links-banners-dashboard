@@ -1077,6 +1077,25 @@ span.checkbox::after {
   margin-right: 5px;
 }
 
+@media (max-width: 767px) {
+  .popup-wrapper-login .popup-login {
+    min-width: 100%;
+  }
+  .popup-wrapper-login .popup-login .login-form {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .popup-wrapper-login .popup-login .login-form .wrapper {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .popup-wrapper-login .popup-login .login-form .btn {
+    width: 50%;
+  }
+}
+
 .popup-wrapper-chat-manager {
   position: fixed;
   width: 100%;
@@ -2129,7 +2148,7 @@ label {
     width: 70%;
   }
   .calendar input {
-    width: 40%;
+    width: 35%;
   }
 }
 
@@ -2369,7 +2388,7 @@ label {
     width: 70%;
   }
   .calendar input {
-    width: 40%;
+    width: 35%;
   }
 }
 
