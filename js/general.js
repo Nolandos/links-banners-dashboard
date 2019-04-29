@@ -6,7 +6,7 @@ function general () {
 
     document.querySelector('.links-container').addEventListener('click', (e) => {    
         if(e.target.classList.contains('add-btn')) {
-            document.querySelector('.popup-add-banners-wrapper').style.display = "flex";
+            document.querySelector('.popup-add-links').style.display = "flex";
           }
     });
 

@@ -1,4 +1,4 @@
-@import "variables";                                                                                                       
+@import "variables";                                                                                                                                                           
 @import "mixins";                    
 @import "normalize";                    
 @import "colorBox";                                     
@@ -10,12 +10,13 @@
 @import "components/menuTop";         
 @import "components/buttons";
 @import "components/navUp";
-@import "components/menuTopSidebar";               
+@import "components/menuTopSidebar";                            
 @import "components/hamburgerIco";
 @import "components/checkboxes";
 @import "components/selectLanguages";    
   
-/* Sections */      
+/* Sections */ 
+@import "sections/popupAddLinks";     
 @import "sections/popupLogin";
 @import "sections/popupChat"; 
 @import "sections/popupAddBanners";     

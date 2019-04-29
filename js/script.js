@@ -226,6 +226,84 @@ document.querySelector('.chat-manager').addEventListener('click', (e) => {
   e.stopPropagation();
 });
 
+document.querySelector('.popup-add-links').addEventListener('click', (e) => {  
+  
+  let popupWrapperChat = document.querySelector('.popup-add-links');
+  
+  popupWrapperChat.style.display = "none"; 
+});
+
+document.querySelector('.add-links').addEventListener('click', (e) => {
+  e.stopPropagation();
+});
+
+/*FUNCTIONS FOR SCROLLBAR ADD LINKS POPUP*/
+document.getElementById('scrol-bar-y-4').addEventListener('input', (e) => {
+  let containerToScroll = document.querySelector('#checkbox-links');
+  let scroll = document.getElementById('scrol-bar-y-4');
+ 
+  scrollBar(containerToScroll, scroll);
+
+});
+
+/*FUNCTION FOR CLOSE ADD LINKS POPUP*/
+document.querySelector('.close-add-links-ico').addEventListener('click', (e) => {
+  let popupWrapperChat = document.querySelector('.popup-add-links');
+
+  popupWrapperChat.style.display = "none"; 
+});
+
+/*FUNCTIONS FOR ACTIVE COPY BUTTON*/
+
+document.querySelector('#generated-link-2').addEventListener('input', (e) => {
+  let copyBtn = document.querySelector('#copy-btn-2');
+
+  copyBtn.removeAttribute('disabled');
+
+  if(document.querySelector('#generated-link-2').value === '') {
+    copyBtn.disabled = true;
+  }
+
+});
+
+/*FUNCTIONS FOR COPY LINK*/
+document.querySelector('#copy-btn-2').addEventListener('click', (e) => {
+  let input = document.querySelector('#generated-link-2');
+  input.select();
+
+  document.execCommand('copy');
+  
+  alert('Skopiowano link !');
+});
+
+/*FUNCTIONS FOR SELECT LANGUAGE COMPONENT */
+
+document.querySelector('#language-select-2').addEventListener('click', (e) => {
+let languageList = document.querySelector('#language-list-2');
+
+if(languageList.style.display === "block") {
+  languageList.style.display = "none";
+} else {
+  languageList.style.display = "block";
+}
+});
+
+document.querySelector('#language-list-2').addEventListener('click', (e) => {
+let currentChoice = document.querySelector('#language-select-2');
+let languageList = document.querySelector('#language-list-2');
+
+if(e.target.classList.contains('choice')) {
+  currentChoice.innerHTML = e.target.innerHTML;
+  languageList.style.display = "none";     
+}
+
+if(e.target.classList.contains('flag-ico')) {
+  currentChoice.innerHTML = e.target.parentElement.innerHTML;
+  languageList.style.display = "none";
+}
+ 
+});
+
 
 /*FUNCTIONS*/
 
